@@ -1,6 +1,7 @@
 import React from 'react';
 import FrontPage from './components/FrontPage';
 import Navigation from './components/Navigation';
+import { ReactComponent as Logo } from './assets/logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ function App() {
           <div id="App">
             <Switch>
               <Route path="/" exact component={Home}></Route>
+              <Route path="/test" component={Navigation}></Route>
               { // <Route path="/" component={Home}></Route>
             //  <Route component={Page404}/>
               }
@@ -22,8 +24,10 @@ function App() {
 function Home() {
   return(
     <React.Fragment>
-      <Navigation></Navigation>
-      <FrontPage></FrontPage>
+      <Navigation/>
+      <FrontPage>
+        <Logo/>
+      </FrontPage>
     </React.Fragment>
   )
 }
