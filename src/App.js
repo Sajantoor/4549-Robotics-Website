@@ -2,6 +2,7 @@ import React from 'react';
 import FrontPage from './components/FrontPage';
 import Navigation from './components/Navigation';
 import { ReactComponent as Logo } from './assets/logo.svg';
+import './Fonts/fonts.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
