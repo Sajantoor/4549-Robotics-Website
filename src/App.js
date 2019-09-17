@@ -1,7 +1,7 @@
 import React from 'react';
 import FrontPage from './components/FrontPage';
 import Header from './components/Header';
-import { ReactComponent as Logo } from './assets/logo.svg';
+import Text from './components/Text';
 import './Fonts/fonts.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -26,9 +26,8 @@ function Home() {
   return(
     <React.Fragment>
       <Header/>
-      <FrontPage>
-        <Logo/>
-      </FrontPage>
+      <FrontPage/>
+      <Text/>
     </React.Fragment>
   )
 }

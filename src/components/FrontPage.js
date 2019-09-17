@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as NavDown } from '../assets/navDown.svg';
+import { ReactComponent as Logo } from '../assets/logo.svg';
 
 class FrontPage extends React.Component {
   constructor(props) {
     super(props);
 
-    this.subtitle = ["Perseverance", "Respect", "Intergrity", "Determination", "P.R.I.D.E",]
+    this.subtitle = ["Perseverance", "Respect", "Integrity", "Determination", "Excellence", "P.R.I.D.E",]
 
     this.state = {
       index: 0,
@@ -25,9 +26,9 @@ class FrontPage extends React.Component {
             LEARN MORE
           </button>
         </Link>
-              {this.props.children}
+        <Logo/>
         <NavDown/>
-        <div class="bg"></div>
+        <div ref="bg" id="bg"></div>
       </div>
     );
   }
@@ -38,7 +39,7 @@ class FrontPage extends React.Component {
     this.setState({subtitle: this_.subtitle[this.state.index]});
 
     setInterval(function() {
-      if (index === 4) {
+      if (index === (this_.subtitle.length - 1)) {
         index = 0;
       } else {
         index++;
@@ -49,6 +50,27 @@ class FrontPage extends React.Component {
         subtitle: this_.subtitle[index],
       });
     }, 2000);
+
+
+    function moveBackground(this_) {
+        let bg = this_.refs.bg;
+        console.log(bg);
+        let x = random(20, 8);
+        let y = random(20, 8);
+        let sx = random(50, 20);
+        let sy = random(50, 20);
+
+        bg.style.transform = `translate(${x}pt, ${y}pt) scale(1.${sx}, 1.${sx})`;
+        console.log(bg.style.transform);
+    }
+
+    function random(val1, val2) {
+      let x = Math.floor((Math.random() * val1) + val2);
+      console.log(String(x));
+      return String(x);
+    }
+
+    setInterval(moveBackground, 2000, this);
   }
 }
 
