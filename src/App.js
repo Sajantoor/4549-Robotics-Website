@@ -1,6 +1,6 @@
 import React from 'react';
 import FrontPage from './components/FrontPage';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
 import { ReactComponent as Logo } from './assets/logo.svg';
 import './Fonts/fonts.css';
 import './App.css';
@@ -12,7 +12,7 @@ function App() {
           <div id="App">
             <Switch>
               <Route path="/" exact component={Home}></Route>
-              <Route path="/test" component={Navigation}></Route>
+              <Route path="/test" component={Header}></Route>
               { // <Route path="/" component={Home}></Route>
             //  <Route component={Page404}/>
               }
@@ -25,7 +25,7 @@ function App() {
 function Home() {
   return(
     <React.Fragment>
-      <Navigation/>
+      <Header/>
       <FrontPage>
         <Logo/>
       </FrontPage>

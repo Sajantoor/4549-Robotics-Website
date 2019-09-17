@@ -14,7 +14,6 @@ class FrontPage extends React.Component {
     }
   }
 
-
   render() {
     return(
       <div className="frontPage">
@@ -28,8 +27,7 @@ class FrontPage extends React.Component {
         </Link>
               {this.props.children}
         <NavDown/>
-
-
+        <div class="bg"></div>
       </div>
     );
   }
