@@ -159,6 +159,7 @@ h1 {
 }
 
 .button {
+  text-transform: uppercase;
   font-family: 'Akrobat Semibold', sans-serif;
   font-size: 1.6em;
   color: #FFF;
@@ -200,7 +201,7 @@ h1 {
   transition: color 0.2s ease-in-out;
 }
 
-.header h1:hover, .header h1:focus {
+.header h1:hover, .header h1:focus, .teamsDropDown a:hover, .teamsDropDown a:focus {
   color: #bdc3c7;
 }
 
@@ -220,6 +221,11 @@ h1 {
   display: block;
 }
 
+.teamsDropDown {
+  transition: color 0.2s ease-in-out;
+}
+
+
 .text {
   position: relative;
   width: 100%;
@@ -230,6 +236,10 @@ h1 {
 .text * {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.text a {
+  margin: 0%;
 }
 
 .text h1 {

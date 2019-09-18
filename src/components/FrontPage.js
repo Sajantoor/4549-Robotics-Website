@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as NavDown } from '../assets/navDown.svg';
-import { ReactComponent as Logo } from '../assets/logo.svg';
 
 class FrontPage extends React.Component {
   constructor(props) {
     super(props);
 
-    this.subtitle = ["Perseverance", "Respect", "Integrity", "Determination", "Excellence", "P.R.I.D.E",]
+    this.subtitle = this.props.subtitle;
 
     this.state = {
       index: 0,
@@ -17,17 +16,12 @@ class FrontPage extends React.Component {
 
   render() {
     return(
-      <div className="frontPage">
-        <h1> 4549 </h1>
+      <div className="frontPage" ref="frontPage">
+        <h1> {this.props.title} </h1>
         <h2> Envertronics </h2>
         <h2 ref="subtitle" id="subtitle"> {this.state.subtitle} </h2>
-        <Link to="/about">
-          <button aria-label="Learn More" className="button">
-            LEARN MORE
-          </button>
-        </Link>
-        <Logo/>
-        <NavDown/>
+        {this.props.children}
+        <NavDown onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
         <div ref="bg" id="bg"></div>
       </div>
     );
@@ -35,39 +29,42 @@ class FrontPage extends React.Component {
 
   componentDidMount() {
     const this_ = this;
-    let index = this_.state.index;
     this.setState({subtitle: this_.subtitle[this.state.index]});
-
-    setInterval(function() {
-      if (index === (this_.subtitle.length - 1)) {
-        index = 0;
-      } else {
-        index++;
-      }
-
-      this_.setState({
-        index: index,
-        subtitle: this_.subtitle[index],
-      });
-    }, 2000);
-
-
-    function moveBackground(this_) {
-        let bg = this_.refs.bg;
-        let x = random(200, -200);
-        let y = random(200, -200);
-
-        bg.style.backgroundPosition = `${x}px ${y}px`;
-    }
-
-    function random(max, min) {
-      let x = Math.floor(Math.random() * (max - min) + min);
-      return x;
-    }
-
-    setTimeout(moveBackground, 500, this);
-    setInterval(moveBackground, 5000, this);
+    setTimeout(this_.moveBackground, 500, this_);
+    setInterval(this_.moveBackground, 5000, this_);
+    setInterval(this_.changeSubtitle, this.props.time, this_);
   }
+
+  moveBackground(this_) {
+   let bg = this_.refs.bg;
+   let x = this_.random(200, -200);
+   let y = this_.random(200, -200);
+   bg.style.backgroundPosition = `${x}px ${y}px`;
+ }
+
+ changeSubtitle(this_) {
+  let index = this_.state.index;
+   if (index === (this_.subtitle.length - 1)) {
+     index = 0;
+   } else {
+     index++;
+   }
+
+   this_.setState({
+     index: index,
+     subtitle: this_.subtitle[index],
+   });
+ }
+
+ random(max, min) {
+   let x = Math.floor(Math.random() * (max - min) + min);
+   return x;
+ }
+
+   componentWillUnmount() {
+     clearInterval(this.moveBackground);
+     clearInterval(this.changeSubtitle);
+   }
 }
 
 export default FrontPage;
