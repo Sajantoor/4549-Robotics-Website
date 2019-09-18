@@ -54,23 +54,19 @@ class FrontPage extends React.Component {
 
     function moveBackground(this_) {
         let bg = this_.refs.bg;
-        console.log(bg);
-        let x = random(20, 8);
-        let y = random(20, 8);
-        let sx = random(50, 20);
-        let sy = random(50, 20);
+        let x = random(200, -200);
+        let y = random(200, -200);
 
-        bg.style.transform = `translate(${x}pt, ${y}pt) scale(1.${sx}, 1.${sx})`;
-        console.log(bg.style.transform);
+        bg.style.backgroundPosition = `${x}px ${y}px`;
     }
 
-    function random(val1, val2) {
-      let x = Math.floor((Math.random() * val1) + val2);
-      console.log(String(x));
-      return String(x);
+    function random(max, min) {
+      let x = Math.floor(Math.random() * (max - min) + min);
+      return x;
     }
 
-    setInterval(moveBackground, 2000, this);
+    setTimeout(moveBackground, 500, this);
+    setInterval(moveBackground, 5000, this);
   }
 }
 
