@@ -61,10 +61,10 @@ class FrontPage extends React.Component {
    return x;
  }
 
-   componentWillUnmount() {
-     clearInterval(this.moveBackground);
-     clearInterval(this.changeSubtitle);
-   }
+ componentWillUnmount() {
+    clearInterval(this.moveBackground);
+    clearInterval(this.changeSubtitle);
+  }
 }
 
 export default FrontPage;

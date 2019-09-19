@@ -23,6 +23,9 @@ class Header extends React.Component {
         <Link to="/about">
           <h1> About </h1>
         </Link>
+        <Link to="/">
+          <h1> Home </h1>
+        </Link>
       </div>
     );
   }

@@ -54,7 +54,7 @@ function Home() {
       </Text>
 
       <Text
-        title="About Enver Creek"
+        title={"About Enver Creek"}
         body="Wow! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mattis ex. Nam ligula turpis, cursus eu nunc et, interdum cursus augue. Donec luctus ac leo lobortis eleifend. Vestibulum dignissim nec nunc nec aliquam. In hac habitasse platea dictumst. Nam laoreet vel lectus sed egestas. Nunc cursus vestibulum lacus, vitae tempor nunc volutpat nec. Integer sit amet iaculis odio. Proin a accumsan enim. Sed ac porta libero. Mauris nec egestas ipsum. Etiam tortor mauris, iaculis eget ultricies at, sodales quis orci. Sed enim diam, viverra id quam eu, tempus auctor magna. In et enim dictum, finibus eros ac, suscipit nibh. Aliquam erat volutpat. Aliquam id rhoncus urna. Aliquam elementum est et mi vestibulum, et egestas augue eleifend. Duis fringilla nunc nec maximus posuere. Etiam vestibulum congue convallis. Morbi volutpat, est et eleifend ultricies, magna enim finibus erat, ultrices volutpat velit leo et sapien. Nam sit amet mollis ipsum. Praesent laoreet."
         img="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bdb6.png"
       >
@@ -66,7 +66,7 @@ function Home() {
       </Text>
       <Text
         title="About this Website"
-        body="This website was programmed by one of the students in Envertronics. It was programmed using ReactJS, a frontend JavaScript framework."
+        body="This website was designed and programmed by one of Envertronics' students: Sajan Toor. This website was programmed in a JavaScript framework called ReactJS."
         color="#010101"
         img="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
       >
@@ -94,7 +94,7 @@ function A() {
               LEARN MORE
             </button>
           </Link>
-          <Logo/>
+
       </FrontPage>
       <Text
         color="#1c1c1c"
@@ -119,5 +119,7 @@ function A() {
     </React.Fragment>
   )
 }
+
+// BUG: MS Edge does not like "Logo.svg", removing it fixes the issues.
 
 export default App;

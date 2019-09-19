@@ -68,8 +68,8 @@ h1 {
 .frontPage {
   position: relative;
   overflow: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 #bg {
@@ -85,7 +85,7 @@ h1 {
   z-index: -1;
   transition: all 5s;
   animation-fill-mode: forwards;
-  animation: scale linear infinite;
+  animation: scale 20s ease infinite;
 }
 
 @keyframes scale {
@@ -146,7 +146,7 @@ h1 {
 
 #navDown {
   position: absolute;
-  bottom: 10px;
+  bottom: 15%;
   margin: auto;
   left: 0;
   right: 0;
@@ -258,15 +258,16 @@ h1 {
 }
 
 .img-contain {
-  float: right;
-  position: relative;
-  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  top: 10%;
   bottom: 10%;
-  position: relative;
-  height: 550px;
+  right: 5%;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .text img {
+  margin: 0;
   max-height: 100%;
-  width: auto;
 }
