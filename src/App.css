@@ -146,7 +146,7 @@ h1 {
 
 #navDown {
   position: absolute;
-  bottom: 15%;
+  top: 90vh;
   margin: auto;
   left: 0;
   right: 0;
@@ -270,4 +270,8 @@ h1 {
 .text img {
   margin: 0;
   max-height: 100%;
+}
+
+.instagram * {
+  color: #FFF;
 }

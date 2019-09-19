@@ -7,6 +7,8 @@ class FrontPage extends React.Component {
     super(props);
 
     this.subtitle = this.props.subtitle;
+    this.intervalX = false;
+    this.intervalY = false;
 
     this.state = {
       index: 0,
@@ -30,10 +32,16 @@ class FrontPage extends React.Component {
   componentDidMount() {
     const this_ = this;
     this.setState({subtitle: this_.subtitle[this.state.index]});
-    setTimeout(this_.moveBackground, 500, this_);
-    setInterval(this_.moveBackground, 5000, this_);
-    setInterval(this_.changeSubtitle, this.props.time, this_);
-  }
+    this_.intervalX = setInterval(
+      () => this_.moveBackground(this_),
+       5000
+     );
+
+     this_.intervalY = setInterval(
+       () => this_.changeSubtitle(this_),
+       this_.props.time
+     )
+   }
 
   moveBackground(this_) {
    let bg = this_.refs.bg;
@@ -62,8 +70,8 @@ class FrontPage extends React.Component {
  }
 
  componentWillUnmount() {
-    clearInterval(this.moveBackground);
-    clearInterval(this.changeSubtitle);
+    clearInterval(this.intervalX);
+    clearInterval(this.intervalY);
   }
 }
 
