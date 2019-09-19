@@ -2,6 +2,7 @@ import React from 'react';
 import FrontPage from './components/FrontPage';
 import Header from './components/Header';
 import Text from './components/Text';
+import Instagram from './components/Instagram';
 import { ReactComponent as Logo } from './assets/logo.svg';
 import './Fonts/fonts.css';
 import './App.css';
@@ -14,6 +15,7 @@ function App() {
             <Switch>
               <Route path="/" exact component={Home}></Route>
               <Route path="/teams/4549A" component={A}></Route>
+              <Route path="/test" component={Instagram}></Route>
 
               { // <Route path="/" component={Home}></Route>
             //  <Route component={Page404}/>
