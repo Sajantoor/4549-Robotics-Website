@@ -6,24 +6,31 @@ class Instagram extends React.Component {
     super(props);
 
     this.state = {
-      username: "mkbhd",
+      username: this.props.username,
       bio: false,
       pfp: false,
       img: [],
+      size: false,
     }
   }
 
   render() {
     return(
       <div className="instagram">
-        <a href={`https://www.instagram.com/${this.state.username}`}>
-          <h1 ref="title"> {this.state.username} </h1>
-        </a>
-        <p> {this.state.bio} </p>
-        <img src={this.state.pfp} alt=""/>
+        <div className="container">
+          <img className="pfp" src={this.state.pfp} alt=""/>
+          <a href={`https://www.instagram.com/${this.state.username}`}>
+            <h1 ref="title"> {this.state.username} </h1>
+          </a>
+          <p> {this.state.bio} </p>
+      </div>
+        <div class="feed">
         {this.state.img.map((image, index) =>
-          <img src={image}/>
+          <div className="instaContain" key={index + "contain"}>
+            <img src={image} key={index} style={{width: this.state.size + "vmax", height: this.state.size + "vmax"}}  className="images" alt=""/>
+          </div>
         )}
+        </div>
       </div>
     )
   }
@@ -40,12 +47,12 @@ class Instagram extends React.Component {
             console.log(data);
             let imgArray = [];
             let images = data.graphql.user.edge_owner_to_timeline_media.edges;
-            let n
+            let n;
 
-            if (images.length > 5) {
-              n = 5;
+            if (images.length > 6) {
+              n = 6;
             } else {
-              n = images.length
+              n = images.length;
             }
 
             for (var i = 0; i < n; i++) {
@@ -55,13 +62,21 @@ class Instagram extends React.Component {
                 console.log(error);
               }
             }
+            let size;
+
+            if (2 >= n) {
+              size = 40;
+            } else if (3 >= n) {
+              size = 25;
+            }
 
 
             this_.setState({
               username: data.graphql.user.username,
-              bio: this_.newLineRemoval(data.graphql.user.biography),
+              bio: data.graphql.user.biography,
               pfp: data.graphql.user.profile_pic_url_hd,
               img: imgArray,
+              size: size,
             })
           });
         }
@@ -70,18 +85,6 @@ class Instagram extends React.Component {
       console.log('Fetch Error :-S', err);
       this.getPost(username)
     });
-  }
-
-  newLineRemoval(strings) {
-    let array = [];
-    let n = strings.lastIndexOf('\n');
-    strings.split('\n')
-    for (var i = 0; i < strings.split('\n').length; i++) {
-      array.push(strings.split('\n')[i]);
-      array.push(<br/>);
-    }
-
-    return array;
   }
 }
 

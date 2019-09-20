@@ -234,8 +234,8 @@ h1 {
 }
 
 .text * {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .text a {
@@ -272,6 +272,50 @@ h1 {
   max-height: 100%;
 }
 
-.instagram * {
+.instagram {
+  margin: 0 3% 0 3%;
+}
+
+.container {
+  padding: 10px;
+  margin: 1% 5% 2% 5%;
+}
+
+.instagram h1, .instagram p {
+  position: relative;
+  margin: 5px;
   color: #FFF;
+}
+
+.instagram h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.instagram p {
+  width: 90%;
+}
+
+/* needs hover */
+
+.pfp {
+  position: relative;
+  border-radius: 50%;
+  float: left;
+  height: 6em;
+  margin-right: 30px;
+}
+
+.images {
+  width: 25vmax;
+  height: 25vmax;
+  margin: 1%;
+  object-fit: cover;
+  float: left;
+}
+
+.feed {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
 }

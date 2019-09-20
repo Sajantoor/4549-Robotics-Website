@@ -118,6 +118,8 @@ function A() {
       >
 
       </Text>
+
+      <Instagram username="alpharad"/>
     </React.Fragment>
   )
 }
