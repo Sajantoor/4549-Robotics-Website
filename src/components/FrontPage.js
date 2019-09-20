@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ReactComponent as NavDown } from '../assets/navDown.svg';
 
 class FrontPage extends React.Component {

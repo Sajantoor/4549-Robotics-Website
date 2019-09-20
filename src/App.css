@@ -167,6 +167,7 @@ h1 {
   padding: 10px 40px 10px 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(237, 30, 35, 0.7);
+  transition: all 1s;
   transition: bow-shadow 1s, color 0.5s, background-color 0.5s;
   position: relative;
   z-index: 2;
@@ -296,7 +297,41 @@ h1 {
   width: 90%;
 }
 
-/* needs hover */
+
+.button.follow {
+  float: right;
+  bottom: 80px;
+  right: 5%;
+  box-shadow: none;
+  color: #FFF;
+}
+
+
+.follow:hover, .follow:focus {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+.follow:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.follow:hover::after, .follow:focus::after {
+  background: #FFF;
+  z-index: -1;
+  /* needs to be fixed  */
+}
 
 .pfp {
   position: relative;
@@ -309,9 +344,16 @@ h1 {
 .images {
   width: 25vmax;
   height: 25vmax;
-  margin: 1%;
   object-fit: cover;
+}
+
+.instaContain {
   float: left;
+  margin: 1%;
+}
+
+.instaContain p {
+  width: 25vmax;
 }
 
 .feed {

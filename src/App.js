@@ -15,7 +15,6 @@ function App() {
             <Switch>
               <Route path="/" exact component={Home}></Route>
               <Route path="/teams/4549A" component={A}></Route>
-              <Route path="/test" component={Instagram}></Route>
 
               { // <Route path="/" component={Home}></Route>
             //  <Route component={Page404}/>
@@ -119,7 +118,7 @@ function A() {
 
       </Text>
 
-      <Instagram username="alpharad"/>
+      <Instagram username="mkbhd"/>
     </React.Fragment>
   )
 }
