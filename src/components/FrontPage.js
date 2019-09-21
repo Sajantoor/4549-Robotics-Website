@@ -5,7 +5,13 @@ class FrontPage extends React.Component {
   constructor(props) {
     super(props);
 
-    this.subtitle = this.props.subtitle;
+    if (this.props.subtitle) {
+      this.subtitle = this.props.subtitle;
+    } else {
+      this.subtitle = false;
+    }
+
+
     this.intervalX = false;
     this.intervalY = false;
 
@@ -19,10 +25,14 @@ class FrontPage extends React.Component {
     return(
       <div className="frontPage" ref="frontPage">
         <h1> {this.props.title} </h1>
-        <h2> Envertronics </h2>
-        <h2 ref="subtitle" id="subtitle"> {this.state.subtitle} </h2>
+        <h2> {this.props.title2} </h2>
+        {this.state.subtitle &&
+          <h2 ref="subtitle" id="subtitle"> {this.state.subtitle} </h2>
+        }
         {this.props.children}
-        <NavDown onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
+        {!this.props.noNavDown &&
+            <NavDown onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
+        }
         <div ref="bg" id="bg"></div>
       </div>
     );

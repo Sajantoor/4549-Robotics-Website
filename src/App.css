@@ -103,7 +103,7 @@ h1 {
   margin: 0;
 }
 
-.frontPage h1, .frontPage h2, .frontPage button {
+.frontPage h1, .frontPage h2, .frontPage button, .frontPage p {
   position: relative;
   top: 100px;
   left: 5%;
@@ -123,6 +123,20 @@ h1 {
   text-transform: uppercase;
   top: 40px;
   font-size: 4.5em;
+}
+
+.frontPage p {
+  top: 20px;
+  color: #767676;
+  font-size: 1.5em;
+}
+
+.frontPage button {
+  margin-left: 10px;
+}
+
+.frontPage a {
+  padding: 0;
 }
 
 #subtitle {

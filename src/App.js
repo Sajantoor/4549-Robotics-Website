@@ -3,22 +3,23 @@ import FrontPage from './components/FrontPage';
 import Header from './components/Header';
 import Text from './components/Text';
 import Instagram from './components/Instagram';
+import Page404 from './components/404';
 import { ReactComponent as Logo } from './assets/logo.svg';
 import './Fonts/fonts.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
           <div id="App">
             <Switch>
-              <Route path="/" exact component={Home}></Route>
+              <Route path={["/", "/home",]} exact component={Home}></Route>
               <Route path="/teams/4549A" component={A}></Route>
 
-              { // <Route path="/" component={Home}></Route>
-            //  <Route component={Page404}/>
-              }
+
+              <Route component={Page404}></Route>
             </Switch>
           </div>
         </Router>
@@ -31,6 +32,7 @@ function Home() {
       <Header/>
       <FrontPage
         title="4549"
+        title2="Envertronics"
         subtitle={["Perseverance", "Respect", "Integrity", "Determination", "Excellence", "P.R.I.D.E",]}
         time={1000}
         >
@@ -87,6 +89,7 @@ function A() {
       <Header/>
       <FrontPage
         title="4549A"
+        title2="Envertronics"
         subtitle={["Satvik Garg", "Jackie Le", "Owen Gill", "Huy Ngo", "Sajan Toor",]}
         time={2000}
         >

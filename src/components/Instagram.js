@@ -22,7 +22,7 @@ class Instagram extends React.Component {
       <div className="instagram">
         <div className="container">
           <img className="pfp" src={this.state.pfp} alt=""/>
-            <a className="follow button" href={`https://www.instagram.com/${this.state.username}`} target="_blank">
+            <a className="follow button" href={`https://www.instagram.com/${this.state.username}`} target="_blank" rel="noopener noreferrer">
               <h2> Follow </h2>
             </a>
           <h1 ref="title"> {this.state.username} </h1>
@@ -31,7 +31,7 @@ class Instagram extends React.Component {
       </div>
         <div className="feed">
         {this.state.img.map((image, index) =>
-          <a href={`https://www.instagram.com/p/${this.state.links[index]}`} target="_blank">
+          <a href={`https://www.instagram.com/p/${this.state.links[index]}`} target="_blank" rel="noopener noreferrer">
             <div className="instaContain" key={index + "contain"} style={{width: this.state.size + "vmax", height: (this.state.size + 3) + "vmax"}}>
               <div className="logoContain">
                 <InstagramLogo/>
