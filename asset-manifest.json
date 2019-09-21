@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/envertronics/static/css/main.ddf8e977.chunk.css",
-    "main.js": "/envertronics/static/js/main.69a0650d.chunk.js",
-    "main.js.map": "/envertronics/static/js/main.69a0650d.chunk.js.map",
-    "runtime~main.js": "/envertronics/static/js/runtime~main.d4e68a1a.js",
-    "runtime~main.js.map": "/envertronics/static/js/runtime~main.d4e68a1a.js.map",
-    "static/js/2.379f1beb.chunk.js": "/envertronics/static/js/2.379f1beb.chunk.js",
-    "static/js/2.379f1beb.chunk.js.map": "/envertronics/static/js/2.379f1beb.chunk.js.map",
-    "index.html": "/envertronics/index.html",
-    "precache-manifest.41d460dcd66893228e4d2c345829dbd5.js": "/envertronics/precache-manifest.41d460dcd66893228e4d2c345829dbd5.js",
-    "service-worker.js": "/envertronics/service-worker.js",
-    "static/css/main.ddf8e977.chunk.css.map": "/envertronics/static/css/main.ddf8e977.chunk.css.map",
-    "static/media/fonts.css": "/envertronics/static/media/akrobat-extrabold-webfont.b3817e9b.woff",
-    "static/media/instagramLogo.51920192.svg": "/envertronics/static/media/instagramLogo.51920192.svg",
-    "static/media/logo.aaaf1dee.svg": "/envertronics/static/media/logo.aaaf1dee.svg",
-    "static/media/navDown.472abf0f.svg": "/envertronics/static/media/navDown.472abf0f.svg",
-    "static/media/App.css": "/envertronics/static/media/stars.95d58da7.png"
+    "main.css": "/4549-Robotics-Website/static/css/main.54ae7375.chunk.css",
+    "main.js": "/4549-Robotics-Website/static/js/main.bf1e0ae7.chunk.js",
+    "main.js.map": "/4549-Robotics-Website/static/js/main.bf1e0ae7.chunk.js.map",
+    "runtime~main.js": "/4549-Robotics-Website/static/js/runtime~main.55a77a3d.js",
+    "runtime~main.js.map": "/4549-Robotics-Website/static/js/runtime~main.55a77a3d.js.map",
+    "static/js/2.379f1beb.chunk.js": "/4549-Robotics-Website/static/js/2.379f1beb.chunk.js",
+    "static/js/2.379f1beb.chunk.js.map": "/4549-Robotics-Website/static/js/2.379f1beb.chunk.js.map",
+    "index.html": "/4549-Robotics-Website/index.html",
+    "precache-manifest.d352af0948253b81e6bef616b29ed8a6.js": "/4549-Robotics-Website/precache-manifest.d352af0948253b81e6bef616b29ed8a6.js",
+    "service-worker.js": "/4549-Robotics-Website/service-worker.js",
+    "static/css/main.54ae7375.chunk.css.map": "/4549-Robotics-Website/static/css/main.54ae7375.chunk.css.map",
+    "static/media/fonts.css": "/4549-Robotics-Website/static/media/akrobat-extrabold-webfont.b3817e9b.woff",
+    "static/media/instagramLogo.51920192.svg": "/4549-Robotics-Website/static/media/instagramLogo.51920192.svg",
+    "static/media/logo.aaaf1dee.svg": "/4549-Robotics-Website/static/media/logo.aaaf1dee.svg",
+    "static/media/navDown.472abf0f.svg": "/4549-Robotics-Website/static/media/navDown.472abf0f.svg",
+    "static/media/App.css": "/4549-Robotics-Website/static/media/stars.95d58da7.png"
   }
 }
