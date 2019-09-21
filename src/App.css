@@ -294,43 +294,41 @@ h1 {
 }
 
 .instagram p {
-  width: 90%;
+  width: 50%;
+  text-overflow: ellipsis;
 }
-
 
 .button.follow {
   float: right;
-  bottom: 80px;
+  top: 15px;
   right: 5%;
   box-shadow: none;
-  color: #FFF;
+  background: #FFF;
+  margin: 0;
+  transition: all 0.5s, padding 0s;
 }
 
-
-.follow:hover, .follow:focus {
+.button.follow h2 {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Akrobat Semibold', sans-serif;
+  border-radius: 15px;
+  transition: all 0.5s, padding 0s;
 }
 
-.follow:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+.button.follow:hover  {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  z-index: -1;
-  transition: all 1s;
+  padding: 0;
 }
 
-.follow:hover::after, .follow:focus::after {
-  background: #FFF;
-  z-index: -1;
-  /* needs to be fixed  */
+.button.follow:hover h2 {
+  padding: 10px 40px 10px 40px;
+  -webkit-text-fill-color: #FFF;
 }
 
 .pfp {
@@ -345,15 +343,38 @@ h1 {
   width: 25vmax;
   height: 25vmax;
   object-fit: cover;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.images:hover, .logoContain {
+  opacity: 0.5;
+  visibility: visible;
+  z-index: -1;
 }
 
 .instaContain {
   float: left;
   margin: 1%;
+  height: 28vmax;
+  width: 25vmax;
+  overflow: hidden;
 }
 
 .instaContain p {
-  width: 25vmax;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logoContain {
+  position: relative;
+}
+
+#instagramLogo {
+  position: absolute;
+  top: 8vmax;
+  right: 9vmax;
 }
 
 .feed {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactComponent as InstagramLogo } from '../assets/instagramLogo.svg';
 
 // how to get posts
 class Instagram extends React.Component {
@@ -21,16 +22,20 @@ class Instagram extends React.Component {
       <div className="instagram">
         <div className="container">
           <img className="pfp" src={this.state.pfp} alt=""/>
+            <a className="follow button" href={`https://www.instagram.com/${this.state.username}`} target="_blank">
+              <h2> Follow </h2>
+            </a>
           <h1 ref="title"> {this.state.username} </h1>
           <p> {this.state.bio} </p>
-          <a href={`https://www.instagram.com/${this.state.username}`}>
-            <button className="button follow"> follow </button>
-          </a>
+
       </div>
         <div className="feed">
         {this.state.img.map((image, index) =>
-          <a href={`https://www.instagram.com/p/${this.state.links[index]}`}>
-            <div className="instaContain" key={index + "contain"}>
+          <a href={`https://www.instagram.com/p/${this.state.links[index]}`} target="_blank">
+            <div className="instaContain" key={index + "contain"} style={{width: this.state.size + "vmax", height: (this.state.size + 3) + "vmax"}}>
+              <div className="logoContain">
+                <InstagramLogo/>
+              </div>
               <img src={image} key={index} style={{width: this.state.size + "vmax", height: this.state.size + "vmax"}}  className="images" alt=""/>
               <p> {this.state.captions[index]} </p>
             </div>
@@ -67,7 +72,7 @@ class Instagram extends React.Component {
               try {
                 imgArray.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.display_url);
                 captionArray.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.edge_media_to_caption.edges[0].node.text);
-                linkArray.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.edge_media_to_caption.shortcode)
+                linkArray.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.shortcode)
               } catch(error) {
                 console.log(error);
               }
