@@ -29,7 +29,6 @@ class Instagram extends React.Component {
             </a>
           <h1 ref="title"> {this.state.username} </h1>
           <p> {this.state.bio} </p>
-
       </div>
         <div className="feed">
         {this.state.imgData.img.map((image, index) =>
