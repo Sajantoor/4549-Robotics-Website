@@ -2,6 +2,7 @@ import React from 'react';
 import FrontPage from './components/FrontPage';
 import Header from './components/Header';
 import Text from './components/Text';
+import Members from './components/Members';
 import Instagram from './components/Instagram';
 import Page404 from './components/404';
 import { ReactComponent as Logo } from './assets/logo.svg';
@@ -17,7 +18,7 @@ function App() {
             <Switch>
               <Route path={["/", "/home",]} exact component={Home}></Route>
               <Route path="/teams/4549A" component={A}></Route>
-
+              <Route path="/test" component={Members}></Route>
 
               <Route component={Page404}></Route>
             </Switch>
@@ -84,6 +85,25 @@ function Home() {
 }
 
 function A() {
+  let teamMembers = {
+      name: [
+        "PewDiePie",
+        "Elon Musk",
+      ],
+      img: [
+        "https://s3.dexerto.com/thumbnails/_thumbnailLarge/pewdiepie-iron-cross-responds-youtube-video-donation-adl.jpg",
+        "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/Elon_Musk_2-770x433.jpeg?6sX4KX8FoInpgQGTfgzXkXtTpZk7K0NF",
+      ],
+      roles: [
+        "Builder",
+        "Lead Programmer, Builder"
+      ],
+      description: [
+        "Wow this is a description",
+        "Another one!"
+      ],
+    }
+
   return(
     <React.Fragment>
       <Header/>
@@ -98,8 +118,8 @@ function A() {
               LEARN MORE
             </button>
           </Link>
-
       </FrontPage>
+
       <Text
         color="#1c1c1c"
         title="The Robot"
@@ -113,13 +133,8 @@ function A() {
         </Link>
       </Text>
 
-      <Text
-        title="Team Members"
-        body="Wow! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mattis ex. Nam ligula turpis, cursus eu nunc et, interdum cursus augue. Donec luctus ac leo lobortis eleifend. Vestibulum dignissim nec nunc nec aliquam. In hac habitasse platea dictumst. Nam laoreet vel lectus sed egestas. Nunc cursus vestibulum lacus, vitae tempor nunc volutpat nec. Integer sit amet iaculis odio. Proin a accumsan enim. Sed ac porta libero. Mauris nec egestas ipsum. Etiam tortor mauris, iaculis eget ultricies at, sodales quis orci. Sed enim diam, viverra id quam eu, tempus auctor magna. In et enim dictum, finibus eros ac, suscipit nibh. Aliquam erat volutpat. Aliquam id rhoncus urna. Aliquam elementum est et mi vestibulum, et egestas augue eleifend. Duis fringilla nunc nec maximus posuere. Etiam vestibulum congue convallis. Morbi volutpat, est et eleifend ultricies, magna enim finibus erat, ultrices volutpat velit leo et sapien. Nam sit amet mollis ipsum. Praesent laoreet."
-        img="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bdb6.png"
-      >
-
-      </Text>
+      <Members members={teamMembers}>
+      </Members>
 
       <Instagram username="mkbhd"/>
     </React.Fragment>

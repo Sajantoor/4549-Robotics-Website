@@ -10,9 +10,11 @@ class Instagram extends React.Component {
       username: this.props.username,
       bio: false,
       pfp: false,
-      img: [],
-      captions: [],
-      links: [],
+      imgData: {
+        img: [],
+        captions: [],
+        link: [],
+      },
       size: false,
     }
   }
@@ -30,14 +32,14 @@ class Instagram extends React.Component {
 
       </div>
         <div className="feed">
-        {this.state.img.map((image, index) =>
-          <a href={`https://www.instagram.com/p/${this.state.links[index]}`} target="_blank" rel="noopener noreferrer">
+        {this.state.imgData.img.map((image, index) =>
+          <a href={`https://www.instagram.com/p/${this.state.imgData.link[index]}`} target="_blank" rel="noopener noreferrer">
             <div className="instaContain" key={index + "contain"} style={{width: this.state.size + "vmax", height: (this.state.size + 3) + "vmax"}}>
               <div className="logoContain">
                 <InstagramLogo/>
               </div>
               <img src={image} key={index} style={{width: this.state.size + "vmax", height: this.state.size + "vmax"}}  className="images" alt=""/>
-              <p> {this.state.captions[index]} </p>
+              <p> {this.state.imgData.captions[index]} </p>
             </div>
           </a>
         )}
@@ -56,9 +58,14 @@ class Instagram extends React.Component {
       fetch(url).then(function(response) {
           response.json().then(function(data) {
             console.log(data);
-            let imgArray = [];
-            let captionArray = [];
-            let linkArray = [];
+            let obj = {
+              img: [],
+              captions: [],
+              link: [],
+            };
+            // let imgArray = [];
+            // let captionArray = [];
+            // let linkArray = [];
             let images = data.graphql.user.edge_owner_to_timeline_media.edges;
             let n;
 
@@ -70,9 +77,9 @@ class Instagram extends React.Component {
 
             for (var i = 0; i < n; i++) {
               try {
-                imgArray.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.display_url);
-                captionArray.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.edge_media_to_caption.edges[0].node.text);
-                linkArray.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.shortcode)
+                obj.img.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.display_url);
+                obj.captions.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.edge_media_to_caption.edges[0].node.text);
+                obj.link.push(data.graphql.user.edge_owner_to_timeline_media.edges[i].node.shortcode)
               } catch(error) {
                 console.log(error);
               }
@@ -90,10 +97,8 @@ class Instagram extends React.Component {
               username: data.graphql.user.username,
               bio: data.graphql.user.biography,
               pfp: data.graphql.user.profile_pic_url_hd,
-              img: imgArray,
-              captions: captionArray,
+              imgData: obj,
               size: size,
-              links: linkArray,
             })
           });
         }

@@ -36,16 +36,6 @@ button {
   cursor: pointer;
 }
 
-select {
-  text-align-last: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: '';
-  display: block;
-  margin: 0 auto;
-}
-
 input[type='number'] {
     -moz-appearance:textfield;
 }
@@ -65,22 +55,29 @@ h1 {
   font-weight: 500;
 }
 
+p {
+  font-family: 'Akrobat', sans-serif;
+  font-size: 1.2em;
+}
+
 .frontPage {
   position: relative;
   overflow: hidden;
-  min-width: 100vw;
   min-height: 100vh;
 }
 
 #bg {
   height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   background: #141414 url('./assets/stars.png') repeat 0 0;
-  mix-blend-mode: hard-light;
+  background-blend-mode: hard-light;
   opacity: 0.4;
   z-index: -1;
   transition: all 5s;
@@ -151,11 +148,12 @@ h1 {
 }
 
 #logo {
-  position: relative;
+  position: absolute;
+  top: 10vh;
   float: right;
-  bottom: 300pt;
   right: 3%;
-  max-width: 50%;
+  max-width: 40%;
+  padding: 5px;
 }
 
 #navDown {
@@ -359,6 +357,7 @@ h1 {
   object-fit: cover;
   opacity: 1;
   transition: all 0.5s;
+  border-radius: 5px;
 }
 
 .images:hover, .logoContain {
@@ -389,6 +388,8 @@ h1 {
   position: absolute;
   top: 8vmax;
   right: 9vmax;
+  width: 8vmax;
+  height: 8vmax;
 }
 
 .feed {
@@ -396,3 +397,76 @@ h1 {
   margin-right: 5%;
   margin-bottom: 10%;
 }
+
+.members {
+  position: relative;
+  width: 100%;
+  background-color: #292929;
+  padding: 2%;
+  height: 80vh;
+}
+
+.members h1, .members h2, .members h3, .members p {
+  text-align: center;
+  color: #FFF;
+  margin: 5px;
+}
+
+.members h1 {
+  font-size: 2.5em;
+  font-family: 'Akrobat Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.members h2 {
+  text-align: center;
+  font-family: 'Akrobat Bold', sans-serif;
+  font-size: 2em;
+  color: #FFF;
+}
+
+.members h3 {
+  opacity: 0.6;
+  font-size: 1.4em;
+}
+
+.members p {
+  font-family: 'Akrobat Light', sans-serif;
+  opacity: 0.4;
+}
+
+/* @media screen and (max-width: 800px) {
+  .header h1 {
+    font-size: 5vw;
+  }
+
+  .frontPage h1 {
+    font-size: 40vw;
+    margin-bottom: 3vh;
+  }
+
+  .frontPage h2 {
+    font-size: 10vw;
+    margin-bottom: 1vh;
+  }
+
+  #subtitle {
+    font-size: 10vw;
+  }
+
+  #logo {
+    float: left;
+    padding: 5px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .frontPage .button {
+    font-size: 5vw;
+  }
+} */
