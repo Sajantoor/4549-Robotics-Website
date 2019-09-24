@@ -1,9 +1,12 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #141414;
   font-family: 'Akrobat', sans-serif;
-  overflow-x: hidden;
 }
 
 /* ::-webkit-scrollbar {
@@ -400,24 +403,11 @@ p {
   text-overflow: ellipsis;
 }
 
-.logoContain {
-  position: relative;
-}
-
-#instagramLogo {
-  position: absolute;
-  top: 8vmax;
-  right: 9vmax;
-  width: 8vmax;
-  height: 8vmax;
-}
-
 .feed {
   margin-left: 5vw;
   margin-right: 5vw;
   margin-bottom: 10vh;
   width: 90%;
-  max-height: calc(4 * (24vmax + (1.2em * 2.8) + (0.5em)));
   overflow: hidden;
 }
 
@@ -429,18 +419,18 @@ p {
 }
 
 .avatar {
-  height: 15vmax;
-  width: 15vmax;
+  height: 20vmax;
+  width: 20vmax;
   object-fit: cover;
-  border-radius: 1vmax;
+  border-radius: 50%;
   margin: auto;
   display: block;
 }
 
 .memberContain {
   float: left;
-  margin: 2%;
-  margin-right: 5%;
+  width: 20vmax;
+  margin: 5%;
   padding: 5px;
 }
 
@@ -452,7 +442,7 @@ p {
 
 .members h2, .members h3, .members p {
   text-align: center;
-  width: 15vmax;
+  width: 100%;
   color: #FFF;
   margin: 5px;
 }
@@ -465,7 +455,6 @@ p {
 
 .members h2 {
   font-family: 'Akrobat Bold', sans-serif;
-  font-size: 2em;
   color: #FFF;
 }
 
@@ -477,6 +466,7 @@ p {
 .members p {
   font-family: 'Akrobat Light', sans-serif;
   opacity: 0.4;
+  overflow: hidden;
 }
 
 .absolute {
@@ -520,6 +510,10 @@ p {
     width: 85%;
   }
 
+  .text h1 {
+    font-size: 10vw;
+  }
+
   .img-contain {
     float: none;
     position: relative;
@@ -547,5 +541,37 @@ p {
 
   .instagram p {
     width: 90%;
+  }
+
+  .images {
+    width: 50vmax;
+    height: 40vmax;
+  }
+
+  .instaContain {
+    width: 50vmax;
+    height: calc(40vmax + (1.2em * 2.8));
+    margin-bottom: 20px;
+  }
+
+  .memberContain {
+    width: 100%;
+    margin: 1%;
+  }
+
+  .avatar {
+    margin-right: 5%;
+    float: left;
+  }
+
+  .members h2, .members h3, .members p {
+    text-align: left;
+  }
+
+  .textContain {
+    max-height: 20vmax;
+    overflow: hidden;
+    position: relative;
+    top: 15px;
   }
 }

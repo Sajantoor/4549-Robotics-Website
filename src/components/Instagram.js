@@ -29,15 +29,14 @@ class Instagram extends React.Component {
             </a>
           <h1 ref="title"> {this.state.username} </h1>
           <p> {this.state.bio} </p>
+
       </div>
         <div className="feed">
         {this.state.imgData.img.map((image, index) =>
           <a href={`https://www.instagram.com/p/${this.state.imgData.link[index]}`} target="_blank" rel="noopener noreferrer">
-            <div className="instaContain" key={index + "contain"} style={{width: this.state.size + "vmax", height: (this.state.size + 3) + "vmax"}}>
-              <div className="logoContain">
-                <InstagramLogo/>
-              </div>
-              <img src={image} key={index} style={{width: this.state.size + "vmax", height: this.state.size + "vmax"}}  className="images" alt=""/>
+            <div className="instaContain" key={index + "contain"} style={{width: this.state.size, height: `calc(${this.state.size} + (1.2em * 3))`}}>
+          
+              <img src={image} key={index} style={{width: this.state.size, height: this.state.size}}  className="images" alt=""/>
               <p> {this.state.imgData.captions[index]} </p>
             </div>
           </a>
@@ -86,9 +85,7 @@ class Instagram extends React.Component {
 
             let size;
             if (2 >= n) {
-              size = 40;
-            } else if (3 >= n) {
-              size = 25;
+              size = '100%';
             }
 
 
