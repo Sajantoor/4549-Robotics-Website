@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactComponent as InstagramLogo } from '../assets/instagramLogo.svg';
 
 // how to get posts
 class Instagram extends React.Component {
@@ -35,7 +34,7 @@ class Instagram extends React.Component {
         {this.state.imgData.img.map((image, index) =>
           <a href={`https://www.instagram.com/p/${this.state.imgData.link[index]}`} target="_blank" rel="noopener noreferrer">
             <div className="instaContain" key={index + "contain"} style={{width: this.state.size, height: `calc(${this.state.size} + (1.2em * 3))`}}>
-          
+
               <img src={image} key={index} style={{width: this.state.size, height: this.state.size}}  className="images" alt=""/>
               <p> {this.state.imgData.captions[index]} </p>
             </div>

@@ -5,7 +5,7 @@ class Header extends React.Component {
   render() {
     return(
       <div className="header">
-        <Link to="/about">
+        <Link to="/vex">
           <h1> Vex </h1>
         </Link>
 
