@@ -298,7 +298,26 @@ p {
 
 .text img {
   margin: 0;
-  max-height: 100%;
+  max-width: 100%;
+}
+
+
+.right h1 {
+  text-align: right;
+}
+
+.right .img-contain {
+  float: left;
+  left: 5%;
+}
+
+.right p {
+  float: right;
+  text-align: right;
+}
+
+.right button {
+  float: right;
 }
 
 .instagram {
