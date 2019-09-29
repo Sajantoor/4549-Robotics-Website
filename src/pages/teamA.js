@@ -10,20 +10,30 @@ class A extends React.Component {
   render() {
     let teamMembers = {
         name: [
-          "PewDiePie",
-          "Elon Musk",
+          "Satvik Garg",
+          "Jackie Le",
+          "Owen Gill",
+          "Huy Ngo",
+          "Sajan Toor",
+
         ],
         img: [
-          "https://s3.dexerto.com/thumbnails/_thumbnailLarge/pewdiepie-iron-cross-responds-youtube-video-donation-adl.jpg",
-          "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/Elon_Musk_2-770x433.jpeg?6sX4KX8FoInpgQGTfgzXkXtTpZk7K0NF",
+
         ],
+
         roles: [
-          "Builder",
-          "Lead Programmer, Builder"
+          "Test",
+          "Test",
+          "Test",
+          "Test",
+          "Test",
         ],
         description: [
-          "Wow this is a description",
-          "Another one!"
+          "Test",
+          "Test",
+          "Test",
+          "Test",
+          "Grind Never Quit 🔥",
         ],
       }
 
@@ -33,7 +43,7 @@ class A extends React.Component {
         <FrontPage
           title="4549A"
           title2="Envertronics"
-          subtitle={["Satvik Garg", "Jackie Le", "Owen Gill", "Huy Ngo", "Sajan Toor",]}
+          subtitle={teamMembers.name}
           time={2000}
           >
             <Link to="/about">
@@ -59,7 +69,7 @@ class A extends React.Component {
         <Members members={teamMembers}>
         </Members>
 
-        <Instagram username="mkbhd"/>
+        <Instagram username="4549alpha"/>
       </React.Fragment>
     )
   }

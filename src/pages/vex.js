@@ -2,6 +2,7 @@ import React from 'react';
 import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
+import Instagram from '../components/Instagram';
 import VexLogo from '../assets/VexLogo.png';
 
 class Vex extends React.Component {
@@ -12,7 +13,7 @@ class Vex extends React.Component {
         <FrontPage
           title="VEX"
           title2="Robotics Competition"
-          subtitle={["Tower Takeover 2020", "Turning Point 2019", "In The Zone 2018", "Starstruck 2017", "Nothing But Net 2016",]}
+          subtitle={["Tower Takeover (2020)", "Turning Point (2019)", "In The Zone (2018)", "Starstruck (2017)", "Nothing But Net (2016)",]}
           time={1000}
           >
             <a href="https://www.vexrobotics.com/" target="_blank" rel="noopener noreferrer">
@@ -55,6 +56,8 @@ class Vex extends React.Component {
         >
         <iframe title="towerTakeover" width="560" height="315" src="https://www.youtube.com/embed/_JVQOiw_OUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Text>
+
+        <Instagram username="vexrobotics"/>
       </React.Fragment>
     )
   }
