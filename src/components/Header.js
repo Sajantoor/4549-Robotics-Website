@@ -37,11 +37,14 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
+    if (window.scrollY > 200) {
+      this.setState({scroll: true});
+    }
+
     window.addEventListener('scroll', this.scrollCheck);
   }
 
   scrollCheck() {
-    console.log(this);
     if (window.scrollY > 200) {
       this.setState({scroll: true});
     } else {

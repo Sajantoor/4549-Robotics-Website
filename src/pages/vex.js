@@ -61,6 +61,10 @@ class Vex extends React.Component {
       </React.Fragment>
     )
   }
+
+  componentDidMount() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
 }
 
 export default Vex;
