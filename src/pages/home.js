@@ -10,19 +10,17 @@ class Home extends React.Component {
     return(
       <React.Fragment>
         <Header/>
-        <FrontPage
-          title="4549"
-          title2="Envertronics"
-          subtitle={["Perseverance", "Respect", "Integrity", "Determination", "Excellence", "P.R.I.D.E",]}
-          time={1000}
-          >
-            <Link to="/about">
-              <button aria-label="Learn More" className="button">
-                LEARN MORE
-              </button>
-            </Link>
+          <FrontPage
+            title="4549"
+            title2="Envertronics"
+            subtitle={["Perseverance", "Respect", "Integrity", "Determination", "Excellence", "P.R.I.D.E",]}
+            time={1000}
+            >
+            <button aria-label="Learn More" className="button" onClick={() => window.scrollTo({top: document.getElementById('frontPage').clientHeight, behavior: 'smooth'})}>
+              LEARN MORE
+            </button>
             <Logo/>
-        </FrontPage>
+          </FrontPage>
         <Text
           color="#1c1c1c"
           title="About Envertronics"

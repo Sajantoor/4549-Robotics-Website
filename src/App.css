@@ -212,7 +212,9 @@ p {
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
+  display: block;
+  transition: all 0.5s ease-in-out;
 }
 
 .header h1 {
@@ -225,10 +227,20 @@ p {
   display: inline-block;
   float: right;
   transition: color 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header h1:hover, .header h1:focus, .teamsDropDown a:hover, .teamsDropDown a:focus {
   color: #bdc3c7;
+}
+
+.headerScroll {
+  position: fixed;
+  background-color: #141414;
+}
+
+.headerScroll h1 {
+  font-size: 1.3em;
 }
 
 .teamsDropDown  {

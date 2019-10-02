@@ -2,9 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scroll: false,
+    }
+
+    this.scrollCheck = this.scrollCheck.bind(this);
+  }
   render() {
     return(
-      <div className="header">
+      <div ref="header" className={this.state.scroll ? "header headerScroll" : "header"}>
         <Link to="/vex">
           <h1> Vex </h1>
         </Link>
@@ -21,16 +29,27 @@ class Header extends React.Component {
             </div>
           </div>
         </h1>
-
-        <Link to="/about">
-          <h1> About </h1>
-        </Link>
         <Link to="/">
           <h1> Home </h1>
         </Link>
       </div>
     );
   }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollCheck);
+  }
+
+  scrollCheck() {
+    console.log(this);
+    if (window.scrollY > 200) {
+      this.setState({scroll: true});
+    } else {
+      this.setState({scroll: false});
+    }
+  }
 }
+
+
 
 export default Header;

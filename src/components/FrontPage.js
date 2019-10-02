@@ -23,7 +23,7 @@ class FrontPage extends React.Component {
 
   render() {
     return(
-      <div className="frontPage" ref="frontPage">
+      <div className="frontPage" id="frontPage" ref="frontPage">
         <h1> {this.props.title} </h1>
         <h2> {this.props.title2} </h2>
         {this.state.subtitle &&
