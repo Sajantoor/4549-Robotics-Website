@@ -10,7 +10,7 @@ class Instagram extends React.Component {
       bio: false,
       pfp: false,
       imgData: {
-        img: [],
+        img: [false],
         captions: [],
         link: [],
       },
@@ -31,7 +31,9 @@ class Instagram extends React.Component {
 
       </div>
         <div className="feed">
-        {this.state.imgData.img.map((image, index) =>
+        {
+          this.state.imgData.img.length ?
+          this.state.imgData.img.map((image, index) =>
           <a href={`https://www.instagram.com/p/${this.state.imgData.link[index]}`} target="_blank" rel="noopener noreferrer">
             <div className="instaContain" key={index + "contain"} style={{width: this.state.size, height: `calc(${this.state.size} + (1.2em * 3))`}}>
 
@@ -39,7 +41,9 @@ class Instagram extends React.Component {
               <p> {this.state.imgData.captions[index]} </p>
             </div>
           </a>
-        )}
+        )
+        : <h2> There are no images... yet. </h2>
+      }
         </div>
       </div>
     )
@@ -86,7 +90,6 @@ class Instagram extends React.Component {
             if (2 >= n) {
               size = '100%';
             }
-
 
             this_.setState({
               username: data.graphql.user.username,

@@ -22,17 +22,17 @@ class A extends React.Component {
         ],
 
         roles: [
-          "Test",
-          "Test",
-          "Test",
-          "Test",
-          "Test",
+          "Programmer / Builder",
+          "Builder / Designer",
+          "Documenter / Programmer",
+          "Builder / Designer",
+          "Programmer / Website Designer and Programmer",
         ],
         description: [
+          "If you judge a fish's ability to climb a tree, it will live its whole life beliving it's stupid.",
           "Test",
           "Test",
-          "Test",
-          "Test",
+          "I'm a simple dude and I do complex things.",
           "Grind Never Quit 🔥",
         ],
       }

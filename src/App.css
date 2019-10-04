@@ -442,6 +442,14 @@ p {
   overflow: hidden;
 }
 
+.feed h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 1em;
+  text-transform: italic;
+  font-family: 'Akrobat Light', sans-serif;
+}
+
 .members {
   position: relative;
   width: 100%;
@@ -461,6 +469,7 @@ p {
 .memberContain {
   float: left;
   width: 20vmax;
+  height: 25vmax;
   margin: 5%;
   padding: 5px;
 }
@@ -491,7 +500,7 @@ p {
 
 .members h3 {
   opacity: 0.6;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .members p {
