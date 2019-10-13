@@ -12,28 +12,34 @@ class A extends React.Component {
         name: [
           "Satvik Garg",
           "Jackie Le",
-          "Owen Gill",
-          "Huy Ngo",
           "Sajan Toor",
-
+          "Huy Ngo",
+          "Owen Gill",
         ],
-        img: [
 
+        img: [
+          "/4549a/Satvik.jpg",
+          "/4549a/Jackie.jpg",
+          "/4549a/Sajan.jpg",
+          "/4549a/Huy.jpg",
+          "/4549a/Owen.jpg",
         ],
 
         roles: [
           "Programmer / Builder",
           "Builder / Designer",
-          "Documenter / Programmer",
+          "Lead Programmer / Website Designer and Programmer",
           "Builder / Designer",
-          "Programmer / Website Designer and Programmer",
+          "Documenter / Programmer",
+
+
         ],
         description: [
-          "If you judge a fish's ability to climb a tree, it will live its whole life beliving it's stupid.",
-          "Test",
-          "Test",
-          "I'm a simple dude and I do complex things.",
+          "When nothing goes right, go left.",
+          "Just wait and see.",
           "Grind Never Quit 🔥",
+          "I'm a simple dude and I do complex things.",
+          "You must fail to succeed, experience is key.",
         ],
       }
 
