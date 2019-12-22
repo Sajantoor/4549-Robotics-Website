@@ -103,7 +103,10 @@ class Instagram extends React.Component {
       )
     .catch(function(err) {
       console.log('Fetch Error :-S', err);
-      this.getPost(username)
+      // wait 5 seconds to try again
+      setTimeout(this_.getPost(username), 5000);
+
+      // TODO: Check if they have a connection and act accordingly
     });
   }
 }

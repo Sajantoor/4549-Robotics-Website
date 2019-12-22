@@ -309,6 +309,14 @@ p {
   opacity: 0.5;
 }
 
+.text h2 {
+  color: #FFF;
+  font-family: 'Akrobat Semibold';
+  position: relative;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
 .text p {
   color: #FFF;
   font-size: 1.2em;
@@ -497,13 +505,20 @@ p {
   width: 20vmax;
   height: 25vmax;
   margin: 5%;
-  padding: 5px;
+  padding: 10px;
+}
+
+.memberContain:first-of-type {
+  margin-left: 2%;
 }
 
 .members h1 {
   text-align: left;
   color: #FFF;
-  margin: 5px;
+  margin: 2%;
+  font-size: 2.5em;
+  font-family: 'Akrobat Bold', sans-serif;
+  text-transform: uppercase;
 }
 
 .members h2, .members h3, .members p {
@@ -511,12 +526,6 @@ p {
   width: 100%;
   color: #FFF;
   margin: 5px;
-}
-
-.members h1 {
-  font-size: 2.5em;
-  font-family: 'Akrobat Bold', sans-serif;
-  text-transform: uppercase;
 }
 
 .members h2 {
@@ -538,7 +547,6 @@ p {
 .absolute {
   position: absolute;
 }
-
 
 @media screen and (max-width: 800px) {
   .header h1 {

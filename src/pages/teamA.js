@@ -28,18 +28,18 @@ class A extends React.Component {
         roles: [
           "Programmer / Builder",
           "Builder / Designer",
-          "Lead Programmer / Website Designer and Programmer",
+          "Programmer / Website Designer and Programmer",
           "Builder / Designer",
-          "Documenter / Programmer",
+          "Documenter",
 
 
         ],
         description: [
           "When nothing goes right, go left.",
           "Just wait and see.",
-          "Grind Never Quit 🔥",
+          "Grind, Never Quit.",
           "I'm a simple dude and I do complex things.",
-          "You must fail to succeed, experience is key.",
+          "You must fail to succeed.",
         ],
       }
 
