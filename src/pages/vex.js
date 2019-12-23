@@ -13,7 +13,7 @@ class Vex extends React.Component {
         <FrontPage
           title="VEX"
           title2="Robotics Competition"
-          subtitle={["Tower Takeover (2020)", "Turning Point (2019)", "In The Zone (2018)", "Starstruck (2017)", "Nothing But Net (2016)",]}
+          subtitle={["Tower Takeover (2020)", "Turning Point (2019)", "In The Zone (2018)", "Starstruck (2017)", "Nothing But Net (2016)", "Skyrise (2015)", "Toss Up (2014)", "Sack Attack (2013)", "Gateway (2012)", "Round Up (2011)", "Clean Sweep (2010)", "Elevation (2009)", "Bridge Battle (2008)"]}
           time={1000}
           >
             <a href="https://www.vexrobotics.com/" target="_blank" rel="noopener noreferrer">

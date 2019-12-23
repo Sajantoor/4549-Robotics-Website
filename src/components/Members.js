@@ -12,7 +12,7 @@ class Members extends React.Component {
   render() {
     return(
       <div className="members">
-        <h1> Team Members </h1>
+        <h1 className="heading"> Team Members </h1>
         {this.state.members.name.map((Name, i) =>
         <div className="memberContain">
           <img className="avatar" src={this.state.members.img[i]} alt="" key={i + 'img'}></img>

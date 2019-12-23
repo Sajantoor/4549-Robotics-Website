@@ -288,7 +288,7 @@ p {
   margin: 0%;
 }
 
-.text h1 {
+.text h1, .heading {
   color: #FFF;
   font-family: 'Akrobat Bold', sans-serif;
   font-size: 3em;
@@ -296,7 +296,7 @@ p {
   text-transform: uppercase;
 }
 
-.text h1::after, .right h1::after {
+.text h1::after, .right h1::after, .heading::after {
   content: '';
   width: 6%;
   min-width: 50px;
@@ -548,6 +548,68 @@ p {
   position: absolute;
 }
 
+.awards {
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #1c1c1c;
+}
+
+.awardContain {
+  width: 25vmax;
+  height: 25vmax;
+  overflow: hidden;
+  margin: 5% 2% 5% 5%;
+  display: inline-block;
+}
+
+.awardContainer {
+  display: block;
+  width: 100%;
+  margin: 5% 2% 5% 10%;
+}
+
+.awardContain img {
+  height: 70%;
+  margin: auto;
+  display: block;
+}
+
+.awardContain h1 {
+  text-transform: uppercase;
+}
+
+.awardContain h1, .awardContain p {
+  text-align: center;
+  color: #FFF;
+}
+
+.awardContain p {
+  position: relative;
+  bottom: 12px;
+  margin: 5px;
+  width: 50%;
+  left: 25%;
+}
+
+.awardContainer img {
+  float: left;
+}
+
+.awardContainer h1, .awardContainer p {
+  text-align: left;
+  position: relative;
+  left: 100px;
+}
+
+.awardContainer p {
+  width: 100%;
+}
+
+.awardContain p:last-of-type {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 800px) {
   .header h1 {
     font-size: 5vw;
@@ -584,7 +646,7 @@ p {
     width: 85%;
   }
 
-  .text h1 {
+  .text h1, .heading {
     font-size: 10vw;
   }
 
