@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
   render() {
-
     const awardValues = [
       {
         name: "Judges Award",
@@ -30,7 +29,20 @@ class Home extends React.Component {
       },
     ]
 
-
+    const resources = [
+      {
+        name: "Git & GitHub Tutorial",
+        body: "Allowing new VRC teams to understand and use GitHub easily!",
+        img: 'https://image.flaticon.com/icons/png/512/25/25231.png',
+        link: "https://google.ca"
+      },
+      {
+        name: "Scouting Spreadsheet Automation",
+        body: "Open sourcing an important a tool that allows us to be sucessful!",
+        img: 'https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png',
+        link: "https://google.ca"
+      },
+    ]
 
     return(
       <React.Fragment>
@@ -71,20 +83,24 @@ class Home extends React.Component {
           </a>
         </Text>
 
-        <Awards content={awardValues} team={false}>
+        <Awards content={awardValues}>
             <h1 className="heading" style={{marginLeft: '10%'}}> Awards </h1>
         </Awards>
 
         <Text
           title="Our Values"
-          body="Some subtitle here"
         >
+          <p style={{width: "80%"}}> Mauris nec egestas ipsum. Etiam tortor mauris, iaculis eget ultricies at, sodales quis orci. Sed enim diam, viverra id quam eu, tempus auctor magna. In et enim dictum, finibus eros ac, suscipit nibh. Aliquam erat volutpat. Aliquam id rhoncus urna. Aliquam elementum est et mi vestibulum, et egestas augue eleifend. Duis fringilla nunc nec maximus posuere. Etiam vestibulum congue convallis. Morbi volutpat, est et eleifend ultricies, magna enim finibus erat, ultrices volutpat velit leo et sapien. Nam sit amet mollis ipsum. </p>
           <h2> Perseverance </h2>
           <h2> Respect </h2>
           <h2> Integrity </h2>
           <h2> Determination </h2>
           <h2> Excellence </h2>
         </Text>
+
+        <Awards content={resources}>
+            <h1 className="heading" style={{marginLeft: '10%'}}> Resources </h1>
+        </Awards>
       </React.Fragment>
     )
   }

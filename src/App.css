@@ -344,12 +344,13 @@ p {
 
 .right h1 {
   text-align: right;
+  margin: 0;
 }
 
 .right h1::after {
   float: right;
   top: 60px;
-  right: 80px;
+  right: 115px;
 }
 
 .right .img-contain {
@@ -557,7 +558,7 @@ p {
 
 .awardContain {
   width: 25vmax;
-  height: 25vmax;
+  height: 30vmax;
   overflow: hidden;
   margin: 5% 2% 5% 5%;
   display: inline-block;
@@ -570,25 +571,35 @@ p {
 }
 
 .awardContain img {
-  height: 70%;
+  width: 50%;
   margin: auto;
   display: block;
+  transition: 0.5s all ease-in-out;
+}
+
+.awardContain img:hover, .awardContainer img:hover {
+  filter: drop-shadow(0px 5px 10px rgba(237, 30, 35, 0.6));
 }
 
 .awardContain h1 {
   text-transform: uppercase;
 }
 
-.awardContain h1, .awardContain p {
+.awardContain h1, .awardContain p, .awardContain a {
   text-align: center;
   color: #FFF;
+}
+
+.awardContain a {
+  margin: auto;
+  display: block;
 }
 
 .awardContain p {
   position: relative;
   bottom: 12px;
   margin: 5px;
-  width: 50%;
+  max-width: 50%;
   left: 25%;
 }
 
@@ -600,10 +611,11 @@ p {
   text-align: left;
   position: relative;
   left: 100px;
+  top: 50px;
 }
 
 .awardContainer p {
-  width: 100%;
+  width: 80%;
 }
 
 .awardContain p:last-of-type {

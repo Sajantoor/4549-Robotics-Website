@@ -4,11 +4,12 @@ import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
 import Instagram from '../components/Instagram';
+import Awards from '../components/awards';
 import { Link } from 'react-router-dom';
 
 class A extends React.Component {
   render() {
-    let teamMembers = {
+    const teamMembers = {
         name: [
           "Satvik Garg",
           "Jackie Le",
@@ -43,6 +44,21 @@ class A extends React.Component {
         ],
       }
 
+      const awardValues = [
+        {
+          name: "Judges Award",
+          body: "This award was won by 4549A at West Vancouver Secondary. We won this award because Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mattis ex. Nam ligula turpis, cursus eu nunc et, interdum cursus augue. Donec luctus ac leo lobortis eleifend. Vestibulum dignissim nec nunc nec aliquam. In hac habitasse platea dictumst. Nam laoreet vel lectus sed egestas. Nunc cursus vestibulum lacus, vitae tempor nunc volutpat nec. Integer sit amet iaculis odio. Proin a accumsan enim. Sed ac porta libero. Mauris nec egestas ipsum. Etiam tortor mauris, iaculis eget ultricies at, sodales quis orci. Sed enim diam, viverra id quam eu, tempus auctor magna. In et enim dictum, finibus eros ac, suscipit nibh. Aliquam erat volutpat. Aliquam id rhoncus urna. Aliquam elementum est et mi vestibulum, et egestas augue eleifend. Duis fringilla nunc nec maximus posuere. Etiam vestibulum congue convallis. Morbi volutpat, est et eleifend ultricies, magna enim finibus erat, ultrices volutpat velit leo et sapien.",
+          date: "December 14, 2019",
+          img: 'awards/Judges.png',
+        },
+        {
+          name: "Create Award",
+          body: "This award was won by 4549A at Collingwood. We won this award because Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mattis ex. Nam ligula turpis, cursus eu nunc et, interdum cursus augue. Donec luctus ac leo lobortis eleifend. Vestibulum dignissim nec nunc nec aliquam. In hac habitasse platea dictumst. Nam laoreet vel lectus sed egestas. Nunc cursus vestibulum lacus, vitae tempor nunc volutpat nec. Integer sit amet iaculis odio. Proin a accumsan enim. Sed ac porta libero. Mauris nec egestas ipsum. Etiam tortor mauris, iaculis eget ultricies at, sodales quis orci. Sed enim diam, viverra id quam eu, tempus auctor magna. In et enim dictum, finibus eros ac, suscipit nibh. Aliquam erat volutpat. Aliquam id rhoncus urna. Aliquam elementum est et mi vestibulum, et egestas augue eleifend. Duis fringilla nunc nec maximus posuere. Etiam vestibulum congue convallis. Morbi volutpat, est et eleifend ultricies, magna enim finibus erat, ultrices volutpat velit leo et sapien. Nam sit amet mollis ipsum. ",
+          date: "November 16, 2019",
+          img: 'awards/Create.png',
+        },
+      ]
+
     return(
       <React.Fragment>
         <Header/>
@@ -74,6 +90,10 @@ class A extends React.Component {
 
         <Members members={teamMembers}>
         </Members>
+
+        <Awards content={awardValues} team={true}>
+            <h1 className="heading" style={{marginLeft: '10%'}}> Awards </h1>
+        </Awards>
 
         <Instagram username="4549alpha"/>
       </React.Fragment>
