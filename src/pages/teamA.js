@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
 import Instagram from '../components/Instagram';
-import Awards from '../components/awards';
+import Awards from '../components/Awards';
 import { Link } from 'react-router-dom';
 
 class A extends React.Component {

@@ -2,7 +2,8 @@ import React from 'react';
 import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
-import Awards from '../components/awards';
+import Awards from '../components/Awards';
+import Container from '../components/Container';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
 
@@ -34,7 +35,8 @@ class Home extends React.Component {
         name: "Git & GitHub Tutorial",
         body: "Allowing new VRC teams to understand and use GitHub easily!",
         img: 'https://image.flaticon.com/icons/png/512/25/25231.png',
-        link: "https://google.ca"
+        link: "https://google.ca",
+        linkContent: "GitHub Repository",
       },
       {
         name: "Scouting Spreadsheet Automation",
@@ -98,9 +100,13 @@ class Home extends React.Component {
           <h2> Excellence </h2>
         </Text>
 
-        <Awards content={resources}>
-            <h1 className="heading" style={{marginLeft: '10%'}}> Resources </h1>
-        </Awards>
+        <Text
+          title="Resources"
+          color="#1c1c1c"
+        >
+          <Container content={resources[0]}/>
+
+        </Text>
       </React.Fragment>
     )
   }

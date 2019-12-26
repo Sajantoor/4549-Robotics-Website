@@ -325,13 +325,12 @@ p {
 }
 
 .img-contain {
-  margin: 10px;
+  margin: 0 5% 0 0;
   float: right;
   position: absolute;
   top: 10%;
   bottom: 10%;
-  right: 5%;
-  padding: 10px;
+  right: 2%;
   overflow: hidden;
   max-width: 40%
 }
@@ -571,7 +570,7 @@ p {
 }
 
 .awardContain img {
-  width: 50%;
+  height: 50%;
   margin: auto;
   display: block;
   transition: 0.5s all ease-in-out;
@@ -581,11 +580,13 @@ p {
   filter: drop-shadow(0px 5px 10px rgba(237, 30, 35, 0.6));
 }
 
-.awardContain h1 {
+.awardContain h2 {
   text-transform: uppercase;
+  font-family: 'Akrobat Bold';
+  font-size: 2em;
 }
 
-.awardContain h1, .awardContain p, .awardContain a {
+.awardContain h2, .awardContain p, .awardContain a {
   text-align: center;
   color: #FFF;
 }
@@ -605,9 +606,10 @@ p {
 
 .awardContainer img {
   float: left;
+  height: 100%;
 }
 
-.awardContainer h1, .awardContainer p {
+.awardContainer h2, .awardContainer p {
   text-align: left;
   position: relative;
   left: 100px;
@@ -620,6 +622,10 @@ p {
 
 .awardContain p:last-of-type {
   opacity: 0.5;
+}
+
+.fullWidth {
+  width: 100%;
 }
 
 @media screen and (max-width: 800px) {
