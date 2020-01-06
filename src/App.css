@@ -617,7 +617,7 @@ p {
 }
 
 .awardContainer p {
-  width: 80%;
+  max-width: 70%;
 }
 
 .awardContain p:last-of-type {
@@ -626,6 +626,15 @@ p {
 
 .fullWidth {
   width: 100%;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
 }
 
 @media screen and (max-width: 800px) {

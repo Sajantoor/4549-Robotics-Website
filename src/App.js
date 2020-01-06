@@ -8,7 +8,6 @@ import './Fonts/fonts.css';
 import './App.css';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
-
 function App() {
   return (
     <Router>
@@ -25,6 +24,15 @@ function App() {
   );
 }
 
-// BUG: MS Edge does not like "Logo.svg", removing it fixes the issues.
+function scrollAnimate(element) {
+  // while (true) {
+    console.log(element);
+    console.log(element.scrollHeight);
+  //   timeout(1000);
+  // }
 
+}
+
+// BUG: MS Edge does not like "Logo.svg", removing it fixes the issues.
+export { scrollAnimate }
 export default App;

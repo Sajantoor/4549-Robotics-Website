@@ -1,4 +1,6 @@
 import React from 'react';
+import { scrollAnimate } from '../App.js';
+import { CSSTransitionGroup } from 'react-transition-group';
 import { ReactComponent as NavDown } from '../assets/navDown.svg';
 
 class FrontPage extends React.Component {
@@ -18,18 +20,28 @@ class FrontPage extends React.Component {
     this.state = {
       index: 0,
       subtitle: this.subtitle[0],
+      checkScroll: false,
     }
   }
 
   render() {
     return(
       <div className="frontPage" id="frontPage" ref="frontPage">
-        <h1> {this.props.title} </h1>
-        <h2> {this.props.title2} </h2>
-        {this.state.subtitle &&
-          <h2 ref="subtitle" id="subtitle"> {this.state.subtitle} </h2>
-        }
-        {this.props.children}
+        <CSSTransitionGroup
+          transitionName="example"
+          transitionAppear={this.state.checkScroll}
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}
+        >
+          <h1> {this.props.title} </h1>
+          <h2> {this.props.title2} </h2>
+          {this.state.subtitle &&
+            <h2 ref="subtitle" id="subtitle"> {this.state.subtitle} </h2>
+          }
+          {this.props.children}
+
+        </CSSTransitionGroup>
         {!this.props.noNavDown &&
             <NavDown onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
         }
@@ -40,7 +52,7 @@ class FrontPage extends React.Component {
 
   componentDidMount() {
     const this_ = this;
-    this.setState({subtitle: this_.subtitle[this.state.index]});
+    this.setState({subtitle: this_.subtitle[this.state.index], checkScroll: setTimeout(scrollAnimate(this.refs.frontPage), 1000)});
     this_.intervalX = setInterval(
       () => this_.moveBackground(this_),
        5000

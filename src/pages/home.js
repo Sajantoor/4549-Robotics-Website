@@ -28,23 +28,25 @@ class Home extends React.Component {
         date: "October 19, 2019",
         img: 'awards/Sportsmanship.png',
       },
-    ]
-
-    const resources = [
       {
-        name: "Git & GitHub Tutorial",
-        body: "Allowing new VRC teams to understand and use GitHub easily!",
-        img: 'https://image.flaticon.com/icons/png/512/25/25231.png',
-        link: "https://google.ca",
-        linkContent: "GitHub Repository",
+        name: "Inspire Award",
+        body: "This award was won by the former 4549B at Heritage Woods.",
+        date: "Feburary 2, 2019",
+        img: "awards/Inspire.png",
       },
       {
-        name: "Scouting Spreadsheet Automation",
-        body: "Open sourcing an important a tool that allows us to be sucessful!",
-        img: 'https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png',
-        link: "https://google.ca"
+        name: "Inspire Award",
+        body: "This award was won by the former 4549B at Heritage Woods.",
+        date: "Feburary 2, 2019",
+        img: "awards/Inspire.png",
       },
-    ]
+      {
+        name: "Inspire Award",
+        body: "This award was won by the former 4549B at Heritage Woods.",
+        date: "Feburary 2, 2019",
+        img: "awards/Inspire.png",
+      },
+    ];
 
     return(
       <React.Fragment>
@@ -98,14 +100,6 @@ class Home extends React.Component {
           <h2> Integrity </h2>
           <h2> Determination </h2>
           <h2> Excellence </h2>
-        </Text>
-
-        <Text
-          title="Resources"
-          color="#1c1c1c"
-        >
-          <Container content={resources[0]}/>
-
         </Text>
       </React.Fragment>
     )
