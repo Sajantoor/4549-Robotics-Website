@@ -1,6 +1,7 @@
 import React from 'react';
 import { scrollAnimate } from '../App.js';
 import { CSSTransitionGroup } from 'react-transition-group';
+import { Waypoint } from 'react-waypoint';
 import { ReactComponent as NavDown } from '../assets/navDown.svg';
 
 class FrontPage extends React.Component {
@@ -27,12 +28,14 @@ class FrontPage extends React.Component {
   render() {
     return(
       <div className="frontPage" id="frontPage" ref="frontPage">
+        <Waypoint
+          onEnter={() => this.setState({checkScroll: true})}
+        />
         <CSSTransitionGroup
-          transitionName="example"
+          key={this.state.checkScroll ? 'stay' : null}
+          transitionName="fadeInLeft"
           transitionAppear={this.state.checkScroll}
-          transitionAppearTimeout={500}
-          transitionEnter={false}
-          transitionLeave={false}
+          transitionAppearTimeout={1000}
         >
           <h1> {this.props.title} </h1>
           <h2> {this.props.title2} </h2>
@@ -52,7 +55,7 @@ class FrontPage extends React.Component {
 
   componentDidMount() {
     const this_ = this;
-    this.setState({subtitle: this_.subtitle[this.state.index], checkScroll: setTimeout(scrollAnimate(this.refs.frontPage), 1000)});
+    this.setState({subtitle: this_.subtitle[this.state.index]});
     this_.intervalX = setInterval(
       () => this_.moveBackground(this_),
        5000

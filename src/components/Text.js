@@ -1,22 +1,49 @@
 import React from 'react';
+import { CSSTransitionGroup } from 'react-transition-group';
+import { Waypoint } from 'react-waypoint';
 
 class Text extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      checkScroll: false,
+    }
+  }
+
   render() {
     let name = this.props.right ? ("text right") : "text";
 
     return(
       <div className={name} style={{backgroundColor: this.props.color }}>
-        <h1> {this.props.title} </h1>
-        <p> {this.props.body} </p>
+        <Waypoint
+          onEnter={() => this.setState({checkScroll: true})}
+        />
+        <CSSTransitionGroup
+          key={this.state.checkScroll ? 'stay' : null}
+          transitionName="fadeInLeft"
+          transitionAppear={this.state.checkScroll}
+          transitionAppearTimeout={1000}
+        >
+          <h1> {this.props.title} </h1>
+          <p> {this.props.body} </p>
+
+          {this.props.children}
+        </CSSTransitionGroup>
 
         {this.props.img &&
           <div className="img-contain">
+            <CSSTransitionGroup
+              key={this.state.checkScroll ? 'stay' : null}
+              transitionName="fadeInRight"
+              transitionAppear={this.state.checkScroll}
+              transitionAppearTimeout={1000}
+            >
             <img src={this.props.img} alt=""/>
+            </CSSTransitionGroup>
           </div>
         }
 
         {this.props.right && <div style={{clear: 'both'}}></div>}
-        {this.props.children}
       </div>
     );
   }

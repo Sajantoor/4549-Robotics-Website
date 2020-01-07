@@ -68,11 +68,9 @@ class A extends React.Component {
           subtitle={teamMembers.name}
           time={2000}
           >
-            <Link to="/about">
-              <button aria-label="Learn More" className="button">
-                LEARN MORE
-              </button>
-            </Link>
+          <button aria-label="Learn More" className="button" onClick={() => window.scrollTo({top: document.getElementById('frontPage').clientHeight, behavior: 'smooth'})}>
+            LEARN MORE
+          </button>
         </FrontPage>
 
         <Text

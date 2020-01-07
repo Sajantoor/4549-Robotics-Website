@@ -628,13 +628,28 @@ p {
   width: 100%;
 }
 
-.example-appear {
-  opacity: 0.01;
+/* Animating */
+
+.fadeInLeft-appear {
+  transform: translate(-500px, 0);
+  opacity: 0;
 }
 
-.example-appear.example-appear-active {
+.fadeInLeft-appear.fadeInLeft-appear-active {
   opacity: 1;
-  transition: opacity .5s ease-in;
+  transform: translate(0, 0);
+  transition: all 1s ease-in-out;
+}
+
+.fadeInRight-appear {
+  transform: translate(500px, 0);
+  opacity: 0;
+}
+
+.fadeInRight-appear.fadeInRight-appear-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 1s ease-in-out;
 }
 
 @media screen and (max-width: 800px) {
