@@ -21,20 +21,15 @@ class FrontPage extends React.Component {
     this.state = {
       index: 0,
       subtitle: this.subtitle[0],
-      checkScroll: false,
     }
   }
 
   render() {
     return(
       <div className="frontPage" id="frontPage" ref="frontPage">
-        <Waypoint
-          onEnter={() => this.setState({checkScroll: true})}
-        />
         <CSSTransitionGroup
-          key={this.state.checkScroll ? 'stay' : null}
           transitionName="fadeInLeft"
-          transitionAppear={this.state.checkScroll}
+          transitionAppear={true}
           transitionAppearTimeout={1000}
         >
           <h1> {this.props.title} </h1>
