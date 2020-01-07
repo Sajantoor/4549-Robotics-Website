@@ -3,7 +3,6 @@ import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Awards from '../components/Awards';
-import Container from '../components/Container';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
 

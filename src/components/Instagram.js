@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { CSSTransitionGroup } from 'react-transition-group';
+import { Waypoint } from 'react-waypoint';
 // how to get posts
 class Instagram extends React.Component {
   constructor(props) {
@@ -15,12 +16,22 @@ class Instagram extends React.Component {
         link: [],
       },
       size: false,
+      scrollCheck: false,
     }
   }
 
   render() {
     return(
       <div className="instagram">
+        <Waypoint
+          onEnter={() => this.setState({checkScroll: true})}
+        />
+        <CSSTransitionGroup
+          key={this.state.checkScroll ? 'stay' : null}
+          transitionName="fadeInTop"
+          transitionAppear={this.state.checkScroll}
+          transitionAppearTimeout={1000}
+        >
         <div className="container">
           <img className="pfp" src={this.state.pfp} alt=""/>
             <a className="follow button" href={`https://www.instagram.com/${this.state.username}`} target="_blank" rel="noopener noreferrer">
@@ -28,17 +39,23 @@ class Instagram extends React.Component {
             </a>
           <h1 ref="title"> {this.state.username} </h1>
           <p> {this.state.bio} </p>
-
-      </div>
+        </div>
+      </CSSTransitionGroup>
         <div className="feed">
         {
           this.state.imgData.img.length ?
           this.state.imgData.img.map((image, index) =>
           <a href={`https://www.instagram.com/p/${this.state.imgData.link[index]}`} target="_blank" rel="noopener noreferrer">
             <div className="instaContain" key={index + "contain"} style={{width: this.state.size, height: `calc(${this.state.size} + (1.2em * 3))`}}>
-
+              <CSSTransitionGroup
+                key={this.state.checkScroll ? 'stay' : null}
+                transitionName="fadeInLeft"
+                transitionAppear={this.state.checkScroll}
+                transitionAppearTimeout={1000}
+              >
               <img src={image} key={index} style={{width: this.state.size, height: this.state.size}}  className="images" alt=""/>
               <p> {this.state.imgData.captions[index]} </p>
+              </CSSTransitionGroup>
             </div>
           </a>
         )

@@ -629,6 +629,14 @@ p {
 }
 
 /* Animating */
+.fadeIn-appear {
+  opacity: 0;
+}
+
+.fadeIn-appear.fadeIn-appear-active {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
 
 .fadeInLeft-appear {
   transform: translate(-500px, 0);
@@ -636,6 +644,17 @@ p {
 }
 
 .fadeInLeft-appear.fadeInLeft-appear-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 1s ease-in-out;
+}
+
+.fadeInTop-appear {
+  transform: translate(0, -50px);
+  opacity: 0;
+}
+
+.fadeInTop-appear.fadeInTop-appear-active {
   opacity: 1;
   transform: translate(0, 0);
   transition: all 1s ease-in-out;
