@@ -3,9 +3,7 @@ import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
-import Instagram from '../components/Instagram';
 import Awards from '../components/Awards';
-import { Link } from 'react-router-dom';
 
 class E extends React.Component {
   render() {
@@ -64,7 +62,7 @@ class E extends React.Component {
         <Text
           title="The Robot"
           body="In the beginning, our robot had a DR4B lift with a claw which could intake up to 3 cubes. However, our team decided to change the design and go for the popular stacker bot with a tray and intake rollers. Our main idea was to combine our lift with tray and stack up to 9 cubes while also being able to put a cube in the highest tower. We faced a lot of problems with this design as apart from being massive and slow, the cubes slide down the tray as the stacks increases up to 5 cubes. To solve this problem we are going to remove the lift and hopefully that would decrease the mass as well as the tray angle and would allow us to stack cubes successfully. Our drive trains have torque ratios which makes it slow but prevents it from being toppled over by another robot and it can also go in and out of the goal areas on the field with ease."
-          img="https://www.ssbwiki.com/images/thumb/3/38/R.O.B._%28JPN%29_SSBU.png/600px-R.O.B._%28JPN%29_SSBU.png"
+          img="/4549e/Robot.png"
         >
         </Text>
 

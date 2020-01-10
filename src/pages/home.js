@@ -34,16 +34,16 @@ class Home extends React.Component {
         img: "awards/Inspire.png",
       },
       {
-        name: "Inspire Award",
+        name: "Top Skills Award",
         body: "This award was won by the former 4549B at Heritage Woods.",
         date: "Feburary 2, 2019",
-        img: "awards/Inspire.png",
+        img: "awards/Skills.png",
       },
       {
-        name: "Inspire Award",
-        body: "This award was won by the former 4549B at Heritage Woods.",
-        date: "Feburary 2, 2019",
-        img: "awards/Inspire.png",
+        name: "Excellence Award",
+        body: "This award was won by the former 4549B at BCIT.",
+        date: "Novemeber 3, 2018",
+        img: "awards/Excellence.png",
       },
     ];
 
@@ -65,19 +65,14 @@ class Home extends React.Component {
           color="#1c1c1c"
           title="About Envertronics"
           body="Our first season competing in the Vex Robotics Competition was the 2012-2013 game, Sack Attack. Envertronics is now entering its 8th year competing in the competition. Throughout our last 7 seasons, we have won a combined 48 awards. During last season alone, we totaled 19 awards. Thats means 40% of all of our accomplishments are from last year. The VRC Competition, Turning Point was not only the test year for V5, but also our new format. Enver Creek Robotics is now offered as a course within the standard timetable. This allows students to spend more time working on their robot and generally allows for more to get done over less time, as everyone is provided 80 minutes of daily work time from September to January."
-          img="https://www.ssbwiki.com/images/thumb/3/38/R.O.B._%28JPN%29_SSBU.png/600px-R.O.B._%28JPN%29_SSBU.png"
+          fullWidth={true}
         >
-          <button aria-label="Learn More" className="button">
-            <Link to="/teams">
-              LEARN MORE
-            </Link>
-          </button>
         </Text>
 
         <Text
           title="About Enver Creek"
           body="Enver Creek is a public secondary school located in Surrey, British Columbia, Canada. It opened in 1997 and has adapted the Cougar as its mascot as well as the school colours of Burgundy and Teal. There are currently over 1,400 students attending Enver Creek with about 125 staff members throughout the school. There are many different course branches that students have the choice of going into. On top of the standard Mathematics, Science fields, Social Studies courses and English classes. We have multiple Language courses offered, Physical & Health Education and Career Life Education to provide students a variety of course types. Art, Band, Dance and Drama covering the Fine Arts. Our Applied Skills courses range from Business and Home Economics, Information & Communication Technology and Technology Education. The District has Online and Summer courses available to students at no extra charge. Sports teams such as Soccer, Basketball, Volleyball, Badminton and Ultimate are run throughout the school year. However, there are many more clubs hosted within Enver Creek such as Green Team. Charities, Student Council, Chess Club, Multicultural Club, Life Drawing and last but certainly not least, Robotics."
-          img="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bdb6.png"
+          img="/assets/Enver Creek Logo.png"
         >
           <button aria-label="Learn More" className="button">
             <a href="https://www.surreyschools.ca/schools/envercreek/Pages/default.aspx" target="_blank" rel="noopener noreferrer">

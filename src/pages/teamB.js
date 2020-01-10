@@ -3,9 +3,6 @@ import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
-import Instagram from '../components/Instagram';
-import Awards from '../components/Awards';
-import { Link } from 'react-router-dom';
 
 class B extends React.Component {
   render() {
@@ -56,7 +53,7 @@ class B extends React.Component {
           color="#1c1c1c"
           title="The Robot"
           body="Our group designed our robot as quickly as possible to go to our first competition. We decided to make the robot more of a compact design so it would easily stay in the size limit and won’t be very bulky. We wanted to make the robot narrower because of our strategy of staying in a corner, so we can stack more efficiently. We had got our inspiration from the team RI3D and we made our second robot based on their robot. We also found Abhay (4549E) very inspiring because he helped us when we were struggling to fix our tray. The robot that went to our first tournament went through many problems such as the tilter not working, rollers were too small and we had to make the sprockets bigger, also our rollers weren’t flipping out at the start of the matches. But we were able to overcome these problems."
-          img="https://www.ssbwiki.com/images/thumb/3/38/R.O.B._%28JPN%29_SSBU.png/600px-R.O.B._%28JPN%29_SSBU.png"
+          img="/4549b/Robot.png"
         >
         </Text>
 

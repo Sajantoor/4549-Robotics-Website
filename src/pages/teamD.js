@@ -4,8 +4,6 @@ import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
 import Instagram from '../components/Instagram';
-import Awards from '../components/Awards';
-import { Link } from 'react-router-dom';
 
 class D extends React.Component {
   render() {
@@ -56,7 +54,7 @@ class D extends React.Component {
           color="#1c1c1c"
           title="The Robot"
           body="Our robot takes the design of the complex traybot. This design is able to capitalize on all aspects of the game effectively. Our robot has a 4 motor; 200RPM; 1:1 drive. A 1 motor; 100RPM; 1:7 tilter. Also a 1 motor; 100RPM; 1:7 2-bar lift. As well as 2 motor; 100RPM; 1:1 intakes. Our traybot excels in stacking, which is the main scoring opportunity within Tower Takeover. The bot is able to take a sizeable capacity of cubes (7+) into its tray, and deposit them into the scoring zones with ease. The lift component comes secondary, as it multiplies our stack points to gain an edge, but it can also serve as a double-edged sword, potentially aiding the opponents points. Our inspiration initially came initially came from the 448X RI3D reveal, as it was shown to have competitive potential and be the “M.E.T.A” robot of this year’s game. We have since been designing and building on top of the design with numerous iterations to improve and suit it to our needs. For the future, we hope to expand our tray capacity to accommodate more cubes (10), and experiment with our intakes to find that difficult balance of compression and speed."
-          img="https://www.ssbwiki.com/images/thumb/3/38/R.O.B._%28JPN%29_SSBU.png/600px-R.O.B._%28JPN%29_SSBU.png"
+          img="4549d/Robot.png"
         >
         </Text>
 

@@ -3,9 +3,6 @@ import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
-import Instagram from '../components/Instagram';
-import Awards from '../components/Awards';
-import { Link } from 'react-router-dom';
 
 class F extends React.Component {
   render() {
@@ -59,7 +56,7 @@ class F extends React.Component {
           color="#1c1c1c"
           title="The Robot"
           body="Our robot started out as a continuous lift, which unfortunately was not a viable option. This led us to change into a tried and trued tray and intake design. Our robot features all components of the robots that we are seeing to be popular in this year’s game: a tray being pushed by an angler with arms on either side of it, which have a tank-tread intake at the end. Our intake is tripled up on sprockets, as that prevents the tank tread from being pushed back and forth around the sprocket. We currently have only one tray, and after many modifications to the robot height and spacing, we will have a triple-folding tray with one more level made of a sliding kit. Our goal is to be able to stack at least 8 cubes, reach the middle towers with our arms, and fix the problem of cubes falling over when being stacked. After nailing the basic features of this design, including the intake and tray, we hope to add many modifications to improve our robots function and stack cubes effectively."
-          img="https://www.ssbwiki.com/images/thumb/3/38/R.O.B._%28JPN%29_SSBU.png/600px-R.O.B._%28JPN%29_SSBU.png"
+          img="4549f/Robot.png"
         >
         </Text>
 
