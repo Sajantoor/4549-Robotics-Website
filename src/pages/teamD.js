@@ -32,11 +32,11 @@ class D extends React.Component {
           "Builder / Backup Driver"
         ],
         description: [
-          "Sandwich Gang Forever.",
+          "Goofy Gang.",
           "Jump like a butterfly, sing like a bee.",
-          "If you fail to prepare, prepare to succeed.",
+          "If you fail to prepare, prepare to fail.",
           "Practice makes perfect.",
-          "Protein shakes = No babes",
+          "Protein shakes.",
         ],
       }
 
