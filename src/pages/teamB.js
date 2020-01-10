@@ -22,16 +22,16 @@ class B extends React.Component {
         ],
 
         roles: [
-          "Programmer / Builder",
-          "Builder / Designer",
+          "Builder / Notebook",
+          "Builder / Scouter",
           "Programmer / Website Designer and Programmer",
-          "Builder / Designer",
+          "Builder / CAD Artist / Driver",
         ],
         description: [
-          "When nothing goes right, go left.",
-          "Just wait and see.",
-          "Grind, Never Quit.",
-          "I'm a simple dude and I do complex things.",
+          "Just do it.",
+          "Work hard, play hard.",
+          "Puff life",
+          "Don't stress, finesse.",
         ],
       }
 

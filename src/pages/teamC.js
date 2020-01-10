@@ -24,16 +24,18 @@ class C extends React.Component {
         ],
 
         roles: [
-          "Programmer / Builder",
+          "Driver / Builder",
+          "Programmer / Notebook",
+          "CAD Artist / Programmer",
           "Builder / Designer",
-          "Programmer / Website Designer and Programmer",
-          "Builder / Designer",
+          "Builder / Notebook"
         ],
         description: [
-          "When nothing goes right, go left.",
-          "Just wait and see.",
-          "Grind, Never Quit.",
-          "I'm a simple dude and I do complex things.",
+          "I don't know.",
+          "Don't even stress.",
+          "Live your best life.",
+          "I stress read.",
+          "Give me 2 seconds.",
         ],
       }
 

@@ -22,19 +22,17 @@ class F extends React.Component {
         ],
 
         roles: [
-          "Programmer / Builder",
           "Builder / Designer",
-          "Programmer / Website Designer and Programmer",
-          "Builder / Designer",
-          "Documenter",
+          "Programmer / Designer",
+          "Driver / Builder",
+          "Builder / Strategist",
         ],
 
         description: [
-          "When nothing goes right, go left.",
-          "Just wait and see.",
-          "Grind, Never Quit.",
-          "I'm a simple dude and I do complex things.",
-          "You must fail to succeed.",
+          "",
+          "Screaming in comic sans.",
+          "Running in the 90s plays.",
+          "",
         ],
       }
 

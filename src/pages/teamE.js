@@ -9,6 +9,7 @@ class E extends React.Component {
   render() {
     const teamMembers = {
         name: [
+          "Zaryab Kamal",
           "Abhay Cheema",
           "Abhineet Singh",
           "Akul Veauli",
@@ -16,6 +17,7 @@ class E extends React.Component {
         ],
 
         img: [
+          "4549e/Zaryab.jpg",
           "4549e/Abhay.jpg",
           "4549e/Abhineet.jpg",
           "4549e/Akul.jpg",
@@ -23,23 +25,26 @@ class E extends React.Component {
         ],
 
         roles: [
-          "Programmer / Builder",
+          "Team Leader / Builder / Designer / Notebook",
           "Builder / Designer",
-          "Programmer / Website Designer and Programmer",
-          "Builder / Designer",
+          "Builder",
+          "Programmer",
+          "Programmer",
         ],
+        
         description: [
-          "When nothing goes right, go left.",
-          "Just wait and see.",
-          "Grind, Never Quit.",
-          "I'm a simple dude and I do complex things.",
+          "Time isn't the main thing, it's the only thing.",
+          "Try not to become a man of success, try to become a man of values.",
+          "If you can't explain it simply, you don't understand it well enough.",
+          "Insanity: Doing the same thing over and over again and expecting different results.",
+          "Logic can take you from A to B, imagination can take you everywhere.",
         ],
       }
 
       const awardValues = [
         {
           name: "Sportsmanship Award",
-          body: "This award was won by 4549E at Enver Creek Secondary. We won this award because Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mattis ex. Nam ligula turpis, cursus eu nunc et, interdum cursus augue. Donec luctus ac leo lobortis eleifend. Vestibulum dignissim nec nunc nec aliquam. In hac habitasse platea dictumst. Nam laoreet vel lectus sed egestas. Nunc cursus vestibulum lacus, vitae tempor nunc volutpat nec. Integer sit amet iaculis odio. Proin a accumsan enim. Sed ac porta libero. Mauris nec egestas ipsum.",
+          body: "This award was won by 4549E at Enver Creek Secondary. We showed sportsmanship after matches, no matter what the result was.",
           date: "October 19, 2019",
           img: 'awards/Sportsmanship.png',
         },

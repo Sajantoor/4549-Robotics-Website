@@ -13,6 +13,7 @@ class D extends React.Component {
           "Jaideep Spall",
           "Ritvik Joshi",
           "Sukhraj Purewal",
+          "Harman Taggar",
         ],
 
         img: [
@@ -20,6 +21,7 @@ class D extends React.Component {
           "4549d/Jaideep.jpg",
           "4549d/Ritvik.jpg",
           "4549d/Sukhraj.jpg",
+          "4549d/Harman.jpg",
         ],
 
         roles: [
@@ -27,12 +29,14 @@ class D extends React.Component {
           "Builder / Driver / Designer",
           "Team Counselor / Builder",
           "CAD Artist / Scouter",
+          "Builder / Backup Driver"
         ],
         description: [
-          "",
-          "Just wait and see.",
-          "",
-          "",
+          "Sandwich Gang Forever.",
+          "Jump like a butterfly, sing like a bee.",
+          "If you fail to prepare, prepare to succeed.",
+          "Practice makes perfect.",
+          "Protein shakes = No babes",
         ],
       }
 
