@@ -2,7 +2,7 @@ import React from 'react';
 import { scrollAnimate } from '../App.js';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { Waypoint } from 'react-waypoint';
-import { ReactComponent as NavDown } from '../assets/navDown.svg';
+import NavDown from '../assets/navDown.svg';
 
 class FrontPage extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class FrontPage extends React.Component {
 
         </CSSTransitionGroup>
         {!this.props.noNavDown &&
-            <NavDown onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
+            <img src={NavDown} id="navDown" onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
         }
         <div ref="bg" id="bg"></div>
       </div>

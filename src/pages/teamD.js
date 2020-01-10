@@ -23,16 +23,16 @@ class D extends React.Component {
         ],
 
         roles: [
-          "Programmer / Builder",
-          "Builder / Designer",
-          "Programmer / Website Designer and Programmer",
-          "Builder / Designer",
+          "Programmer / Designer",
+          "Builder / Driver / Designer",
+          "Team Counselor / Builder",
+          "CAD Artist / Scouter",
         ],
         description: [
-          "When nothing goes right, go left.",
+          "",
           "Just wait and see.",
-          "Grind, Never Quit.",
-          "I'm a simple dude and I do complex things.",
+          "",
+          "",
         ],
       }
 

@@ -3,7 +3,7 @@ import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
-import Awards from '../components/Awards';
+import Awards from '../components/awards';
 
 class E extends React.Component {
   render() {
