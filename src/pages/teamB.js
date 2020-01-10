@@ -15,10 +15,10 @@ class B extends React.Component {
         ],
 
         img: [
-          "/4549b/Arpit.jpg",
-          "/4549b/Meharvan.jpg",
-          "/4549b/Parneet.jpg",
-          "/4549b/Steven.jpg",
+          "4549b/Arpit.jpg",
+          "4549b/Meharvan.jpg",
+          "4549b/Parneet.jpg",
+          "4549b/Steven.jpg",
         ],
 
         roles: [
@@ -53,7 +53,7 @@ class B extends React.Component {
           color="#1c1c1c"
           title="The Robot"
           body="Our group designed our robot as quickly as possible to go to our first competition. We decided to make the robot more of a compact design so it would easily stay in the size limit and won’t be very bulky. We wanted to make the robot narrower because of our strategy of staying in a corner, so we can stack more efficiently. We had got our inspiration from the team RI3D and we made our second robot based on their robot. We also found Abhay (4549E) very inspiring because he helped us when we were struggling to fix our tray. The robot that went to our first tournament went through many problems such as the tilter not working, rollers were too small and we had to make the sprockets bigger, also our rollers weren’t flipping out at the start of the matches. But we were able to overcome these problems."
-          img="/4549b/Robot.png"
+          img="4549b/Robot.png"
         >
         </Text>
 

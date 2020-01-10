@@ -15,10 +15,10 @@ class F extends React.Component {
         ],
 
         img: [
-          "/4549f/Livleen.jpg",
-          "/4549f/Parnaam.jpg",
-          "/4549f/Rhiana.jpg",
-          "/4549f/Rohaan.jpg",
+          "4549f/Livleen.jpg",
+          "4549f/Parnaam.jpg",
+          "4549f/Rhiana.jpg",
+          "4549f/Rohaan.jpg",
         ],
 
         roles: [

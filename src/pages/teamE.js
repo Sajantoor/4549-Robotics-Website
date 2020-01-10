@@ -16,10 +16,10 @@ class E extends React.Component {
         ],
 
         img: [
-          "/4549e/Abhay.jpg",
-          "/4549e/Abhineet.jpg",
-          "/4549e/Akul.jpg",
-          "/4549e/Mikaeel.jpg",
+          "4549e/Abhay.jpg",
+          "4549e/Abhineet.jpg",
+          "4549e/Akul.jpg",
+          "4549e/Mikaeel.jpg",
         ],
 
         roles: [

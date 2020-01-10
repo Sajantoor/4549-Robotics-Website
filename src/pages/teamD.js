@@ -16,10 +16,10 @@ class D extends React.Component {
         ],
 
         img: [
-          "/4549d/Arman.jpg",
-          "/4549d/Jaideep.jpg",
-          "/4549d/Ritvik.jpg",
-          "/4549d/Sukhraj.jpg",
+          "4549d/Arman.jpg",
+          "4549d/Jaideep.jpg",
+          "4549d/Ritvik.jpg",
+          "4549d/Sukhraj.jpg",
         ],
 
         roles: [

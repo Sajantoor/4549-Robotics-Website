@@ -16,11 +16,11 @@ class C extends React.Component {
         ],
 
         img: [
-          "/4549c/Hamayun.jpg",
-          "/4549c/Hemanya.jpg",
-          "/4549c/Ilaf.jpg",
-          "/4549c/Seerat.jpg",
-          "/4549c/Sehraaj.jpg",
+          "4549c/Hamayun.jpg",
+          "4549c/Hemanya.jpg",
+          "4549c/Ilaf.jpg",
+          "4549c/Seerat.jpg",
+          "4549c/Sehraaj.jpg",
         ],
 
         roles: [
