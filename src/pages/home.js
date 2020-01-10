@@ -2,7 +2,7 @@ import React from 'react';
 import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
-import Awards from '../components/awards';
+import Awards from '../components/Awards';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
 
@@ -93,7 +93,6 @@ class Home extends React.Component {
         <Text
           title="Our Values"
         >
-          <p style={{width: "80%"}}> Mauris nec egestas ipsum. Etiam tortor mauris, iaculis eget ultricies at, sodales quis orci. Sed enim diam, viverra id quam eu, tempus auctor magna. In et enim dictum, finibus eros ac, suscipit nibh. Aliquam erat volutpat. Aliquam id rhoncus urna. Aliquam elementum est et mi vestibulum, et egestas augue eleifend. Duis fringilla nunc nec maximus posuere. Etiam vestibulum congue convallis. Morbi volutpat, est et eleifend ultricies, magna enim finibus erat, ultrices volutpat velit leo et sapien. Nam sit amet mollis ipsum. </p>
           <h2> Perseverance </h2>
           <h2> Respect </h2>
           <h2> Integrity </h2>

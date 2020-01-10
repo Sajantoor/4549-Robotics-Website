@@ -7,12 +7,12 @@ class Text extends React.Component {
     super(props);
     this.state = {
       checkScroll: false,
+      noImage: false,
     }
   }
 
   render() {
     let name = this.props.right ? ("text right") : "text";
-
     return(
       <div className={name} style={{backgroundColor: this.props.color }}>
         <Waypoint
@@ -25,7 +25,7 @@ class Text extends React.Component {
           transitionAppearTimeout={1000}
         >
           <h1> {this.props.title} </h1>
-          <p> {this.props.body} </p>
+          <p style={this.props.fullWidth ? {width: 80 + '%'} : null}> {this.props.body} </p>
 
           {this.props.children}
         </CSSTransitionGroup>

@@ -40,7 +40,8 @@ class Vex extends React.Component {
         <Text
           title="Vex Robotics Competition"
           body="This is the middle & high school level competition of Vex. Every year there is a new game with new elements to grasp and comprehend in order to come up with the optimal design and associated strategy. Although, there are aspects that remain the same regardless of season some being the field which is always 12ft by 12ft and two teams of two going head to head. Each match begins with a 15second autonomous period, which is when pre-programmed code will run. Secondly, the 1minute and 45second driver control period occurs. This is where the majority of the match takes place, the autonomous is more to give a bonus to the winning team, which, which may push them over the edge and win them a match. Finally, the match is scored after the driver control period is over and the winning alliance is announced shortly. The other way to compete is to participate in the skills challenge. During a skills run, your robot has the entire field to itself and has 1minute to score as many points as possible. Each team can get their robot judged, this provides them an opportunity to get feedback as well as making them eligible for many awards. There is a great base to the Vex Robotics Competition which still leaves room for surprises in each individual game."
-          img="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bdb6.png"
+          img={false}
+          fullWidth={true}
         >
           <button aria-label="Learn More" className="button">
             <a href="https://www.vexrobotics.com/vexedr" target="_blank" rel="noopener noreferrer">
