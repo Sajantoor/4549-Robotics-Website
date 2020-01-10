@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/4549-Robotics-Website/static/css/main.f7ea4665.chunk.css",
-    "main.js": "/4549-Robotics-Website/static/js/main.0e2b3f8f.chunk.js",
-    "main.js.map": "/4549-Robotics-Website/static/js/main.0e2b3f8f.chunk.js.map",
+    "main.css": "/4549-Robotics-Website/static/css/main.5ac8597f.chunk.css",
+    "main.js": "/4549-Robotics-Website/static/js/main.0635ff26.chunk.js",
+    "main.js.map": "/4549-Robotics-Website/static/js/main.0635ff26.chunk.js.map",
     "runtime~main.js": "/4549-Robotics-Website/static/js/runtime~main.55a77a3d.js",
     "runtime~main.js.map": "/4549-Robotics-Website/static/js/runtime~main.55a77a3d.js.map",
-    "static/js/2.f4eb5c73.chunk.js": "/4549-Robotics-Website/static/js/2.f4eb5c73.chunk.js",
-    "static/js/2.f4eb5c73.chunk.js.map": "/4549-Robotics-Website/static/js/2.f4eb5c73.chunk.js.map",
+    "static/js/2.770d6321.chunk.js": "/4549-Robotics-Website/static/js/2.770d6321.chunk.js",
+    "static/js/2.770d6321.chunk.js.map": "/4549-Robotics-Website/static/js/2.770d6321.chunk.js.map",
     "index.html": "/4549-Robotics-Website/index.html",
-    "precache-manifest.aaefe1f913534a63902775bf4ff020dd.js": "/4549-Robotics-Website/precache-manifest.aaefe1f913534a63902775bf4ff020dd.js",
+    "precache-manifest.4d3e47200206121edf64300bac2dd3f6.js": "/4549-Robotics-Website/precache-manifest.4d3e47200206121edf64300bac2dd3f6.js",
     "service-worker.js": "/4549-Robotics-Website/service-worker.js",
-    "static/css/main.f7ea4665.chunk.css.map": "/4549-Robotics-Website/static/css/main.f7ea4665.chunk.css.map",
+    "static/css/main.5ac8597f.chunk.css.map": "/4549-Robotics-Website/static/css/main.5ac8597f.chunk.css.map",
     "static/media/fonts.css": "/4549-Robotics-Website/static/media/akrobat-extrabold-webfont.b3817e9b.woff",
     "static/media/VexLogo.png": "/4549-Robotics-Website/static/media/VexLogo.5e8322bf.png",
-    "static/media/logo.aaaf1dee.svg": "/4549-Robotics-Website/static/media/logo.aaaf1dee.svg",
-    "static/media/navDown.472abf0f.svg": "/4549-Robotics-Website/static/media/navDown.472abf0f.svg",
+    "static/media/logo.svg": "/4549-Robotics-Website/static/media/logo.86320b62.svg",
+    "static/media/navDown.f891b1fb.svg": "/4549-Robotics-Website/static/media/navDown.f891b1fb.svg",
     "static/media/App.css": "/4549-Robotics-Website/static/media/stars.95d58da7.png"
   }
 }
