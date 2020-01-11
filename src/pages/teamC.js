@@ -57,7 +57,7 @@ class C extends React.Component {
           color="#1c1c1c"
           title="The Robot"
           body="When we first began, we had built a quite simple and basic claw-bot which was able to lift one cube at a time. This was because we were going to our first competition and had around 3 weeks to build and code. This robot was considered more of an experiment to gain experience. However, following the first competition we were faced with our two main options of which design we were to build. The two designs were of a tray robot and a DR4B robot. In the end, we decided to do a DR4B robot because the tray robot appeared to be much more common and this way we could stack on top of already made stacks. This also made scoring in multiplying towers much more efficient. At the moment, we have the initial design built and coded however are experiencing issues with the DR4B staying straight while in the upwards motion. We are also working on exacting our coding values for a 4 point autonomous. Hopefully with new alterations and improvements our robot will be successful and our goals met!"
-          img="https://www.ssbwiki.com/images/thumb/3/38/R.O.B._%28JPN%29_SSBU.png/600px-R.O.B._%28JPN%29_SSBU.png"
+          img="4549c/Robot.png"
         >
         </Text>
 

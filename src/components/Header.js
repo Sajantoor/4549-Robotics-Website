@@ -46,11 +46,9 @@ class Header extends React.Component {
 
     let currentPage = window.location.href.split("#")[1].split("/")[1];
 
-    console.log(currentPage);
-
-    if (currentPage == "teams") {
+    if (currentPage === "teams") {
       this.setState({page: "teams"});
-    } else if (currentPage == "vex") {
+    } else if (currentPage === "vex") {
       this.setState({page: "vex"});
     } else {
       this.setState({page: "home"});

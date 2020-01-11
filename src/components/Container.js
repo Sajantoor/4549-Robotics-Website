@@ -21,6 +21,7 @@ class Container extends React.Component {
             transitionName="fadeInLeft"
             transitionAppear={this.state.checkScroll}
             transitionAppearTimeout={1000}
+            transitionEnterTimeout={1000}
             >
           <img src={this.props.content.img} alt={this.props.content.name}/>
           <h2> {this.props.content.name} </h2>

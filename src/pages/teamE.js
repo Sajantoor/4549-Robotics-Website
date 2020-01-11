@@ -3,7 +3,7 @@ import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
-import Awards from '../components/awards';
+import Awards from '../components/Awards';
 
 class E extends React.Component {
   render() {
@@ -31,7 +31,7 @@ class E extends React.Component {
           "Programmer",
           "Programmer",
         ],
-        
+
         description: [
           "Time isn't the main thing, it's the only thing.",
           "Try not to become a man of success, try to become a man of values.",

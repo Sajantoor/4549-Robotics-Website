@@ -24,6 +24,7 @@ class Members extends React.Component {
             transitionName="fadeInTop"
             transitionAppear={this.state.checkScroll}
             transitionAppearTimeout={1000}
+            transitionEnterTimeout={1000}
           >
           <h1 className="heading"> Team Members </h1>
           </CSSTransitionGroup>
@@ -33,6 +34,7 @@ class Members extends React.Component {
           transitionName="fadeIn"
           transitionAppear={this.state.checkScroll}
           transitionAppearTimeout={1000}
+          transitionEnterTimeout={1000}
         >
         {this.state.members.name.map((Name, i) =>
             <div className="memberContain">

@@ -31,6 +31,7 @@ class Instagram extends React.Component {
           transitionName="fadeInTop"
           transitionAppear={this.state.checkScroll}
           transitionAppearTimeout={1000}
+          transitionEnterTimeout={1000}
         >
         <div className="container">
           <img className="pfp" src={this.state.pfp} alt=""/>

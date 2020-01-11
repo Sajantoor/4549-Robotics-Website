@@ -23,6 +23,7 @@ class Text extends React.Component {
           transitionName="fadeInLeft"
           transitionAppear={this.state.checkScroll}
           transitionAppearTimeout={1000}
+          transitionEnterTimeout={1000}
         >
           <h1> {this.props.title} </h1>
           <p style={this.props.fullWidth ? {width: 80 + '%'} : null}> {this.props.body} </p>

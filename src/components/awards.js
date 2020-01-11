@@ -22,12 +22,13 @@ class Awards extends React.Component {
           transitionName="fadeInTop"
           transitionAppear={this.state.checkScroll}
           transitionAppearTimeout={1000}
+          transitionEnterTimeout={1000}
           >
           {this.props.children}
 
         </CSSTransitionGroup>
         {this.props.content.map((name, i) =>
-          <Container content={this.props.content[i]} team={this.props.team}/>
+          <Container key={i} content={this.props.content[i]} team={this.props.team}/>
         )}
       </div>
     )

@@ -12,7 +12,6 @@ import './Fonts/fonts.css';
 import './App.css';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group';
-import { Waypoint } from 'react-waypoint';
 
 function App() {
   return (
@@ -42,15 +41,4 @@ function App() {
   );
 }
 
-function scrollAnimate(element) {
-  // while (true) {
-    console.log(element);
-    console.log(element.scrollHeight);
-  //   timeout(1000);
-  // }
-
-}
-
-// BUG: MS Edge does not like "Logo.svg", removing it fixes the issues.
-export { scrollAnimate }
 export default App;

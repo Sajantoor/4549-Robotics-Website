@@ -3,7 +3,6 @@ import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Instagram from '../components/Instagram';
-import VexLogo from '../assets/VexLogo.png';
 
 class Vex extends React.Component {
   render() {

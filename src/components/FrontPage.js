@@ -1,7 +1,5 @@
 import React from 'react';
-import { scrollAnimate } from '../App.js';
 import { CSSTransitionGroup } from 'react-transition-group';
-import { Waypoint } from 'react-waypoint';
 import NavDown from '../assets/navDown.svg';
 
 class FrontPage extends React.Component {
@@ -31,6 +29,7 @@ class FrontPage extends React.Component {
           transitionName="fadeInLeft"
           transitionAppear={true}
           transitionAppearTimeout={1000}
+          transitionEnterTimeout={1000}
         >
           <h1> {this.props.title} </h1>
           <h2> {this.props.title2} </h2>
@@ -41,7 +40,7 @@ class FrontPage extends React.Component {
 
         </CSSTransitionGroup>
         {!this.props.noNavDown &&
-            <img src={NavDown} id="navDown" onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
+            <img src={NavDown} alt="Navigation Down" id="navDown" onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
         }
         <div ref="bg" id="bg"></div>
       </div>

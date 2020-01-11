@@ -2,9 +2,8 @@ import React from 'react';
 import FrontPage from '../components/FrontPage';
 import Header from '../components/Header';
 import Text from '../components/Text';
-import Awards from '../components/awards';
+import Awards from '../components/Awards';
 import Logo from '../assets/logo.svg';
-import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
   render() {
@@ -59,7 +58,7 @@ class Home extends React.Component {
             <button aria-label="Learn More" className="button" onClick={() => window.scrollTo({top: document.getElementById('frontPage').clientHeight, behavior: 'smooth'})}>
               LEARN MORE
             </button>
-            <img id="logo" src={Logo}/>
+            <img id="logo" src={Logo} alt="4549 Logo"/>
           </FrontPage>
         <Text
           color="#1c1c1c"

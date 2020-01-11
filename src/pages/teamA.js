@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Text from '../components/Text';
 import Members from '../components/Members';
 import Instagram from '../components/Instagram';
-import Awards from '../components/awards';
+import Awards from '../components/Awards';
 
 class B extends React.Component {
   render() {
