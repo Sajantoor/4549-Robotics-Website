@@ -1,6 +1,4 @@
 import React from 'react';
-import { CSSTransitionGroup } from 'react-transition-group';
-import { Waypoint } from 'react-waypoint';
 
 class Members extends React.Component {
   constructor(props) {
@@ -15,27 +13,9 @@ class Members extends React.Component {
   render() {
     return(
       <div className="members">
-        <Waypoint
-          onEnter={() => this.setState({checkScroll: true})}
-        />
         <div>
-          <CSSTransitionGroup
-            key={this.state.checkScroll ? 'stay' : null}
-            transitionName="fadeInTop"
-            transitionAppear={this.state.checkScroll}
-            transitionAppearTimeout={1000}
-            transitionEnterTimeout={1000}
-          >
           <h1 className="heading"> Team Members </h1>
-          </CSSTransitionGroup>
         </div>
-        <CSSTransitionGroup
-          key={this.state.checkScroll ? 'stay' : null}
-          transitionName="fadeIn"
-          transitionAppear={this.state.checkScroll}
-          transitionAppearTimeout={1000}
-          transitionEnterTimeout={1000}
-        >
         {this.state.members.name.map((Name, i) =>
             <div className="memberContain">
               <img className="avatar" src={this.state.members.img[i]} alt="" key={i + 'img'}></img>
@@ -47,7 +27,6 @@ class Members extends React.Component {
             </div>
               )
             }
-        </CSSTransitionGroup>
 
         <div style={{clear: 'both'}}></div>
       </div>

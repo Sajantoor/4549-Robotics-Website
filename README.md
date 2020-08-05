@@ -2,14 +2,9 @@
 > 4549 Robotics Website developed using ReactJS, a frontend JavaScript framework. 
 
  #### Table of Contents
-
- * [Vex Online Challenge](#Vex-Online-Challenge)
  * [ReactJS](#ReactJS)
  * [Components](#Components)
- * [Hosting](#Hosting)
-
-### Vex Online Challenge
-> The website was developed to enter in the Vex Online challenge. This challenge required us to create a website with a clear, thoughtout design, which contains content such as information about our robotics program, including our teams, school, etc. Learn more about the [Vex Online Challenge](https://challenges.robotevents.com/challenge/106).
+ * [Vex Online Challenge](#Vex-Online-Challenge)
 
 ### ReactJS
 > The website was developed using ReactJS. ReactJS is a frontend JavaScript framework [developed by Facebook](https://github.com/facebook/react). ReactJS allows for streamlined and fast development on the frontend using as little code as possible using things like components with states and props. 
@@ -37,5 +32,5 @@ class Text extends React.Component {
 
   [View Components](../master/src/components/) 
 
-### Hosting
-> Due to ReactJS being a serverside framework, the website has to be hosted somewhere. We choose Google Firebase for hosting however, we could use something like AWS, GitHub pages, or other hosting options. Google Firebase was a free and simple solution to hosting.  Firebase also provides many analytics such as uptime, user engagement, etc. [Learn more about Firebase here.](https://firebase.google.com/)
+### Vex Online Challenge
+> The website was developed to enter in the Vex Online challenge. This challenge required us to create a website with a clear, thoughtout design, which contains content such as information about our robotics program, including our teams, school, etc. Learn more about the [Vex Online Challenge](https://challenges.robotevents.com/challenge/106).

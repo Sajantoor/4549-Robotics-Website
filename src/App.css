@@ -9,27 +9,6 @@ body {
   font-family: 'Akrobat', sans-serif;
 }
 
-/* ::-webkit-scrollbar {
-  width: 10px;
-}
-
-
-::-webkit-scrollbar-track {
-  background: #141414;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-} */
-
-/* * {
-  border: 1px solid red;
-} */
-
 h1, h2, h3, p, button, select, textarea, input {
   font-family: 'Akrobat', sans-serif;
   text-overflow: ellipsis;
@@ -628,72 +607,6 @@ p {
   width: 100%;
 }
 
-/* Animating */
-@keyframes fadeInLeft {
-  from {
-    transform: translate(-500px, 0);
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate(500px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInTop {
-  from {
-    opacity: 0;
-    transform: translate(0, -50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-.fadeIn-appear.fadeIn-appear-active {
-  animation-name: fadeIn;
-  animation-duration: 1000ms;
-}
-
-.fadeInLeft-appear.fadeInLeft-appear-active {
-  animation-name: fadeInLeft;
-  animation-duration: 1000ms;
-}
-
-.fadeInTop-appear.fadeInTop-appear-active {
-  animation-name: fadeInTop;
-  animation-duration: 1000ms;
-}
-
-.fadeInRight-appear.fadeInRight-appear-active {
-  animation-name: fadeInRight;
-  animation-duration: 1000ms;
-}
 
 @media screen and (max-width: 800px) {
   .header h1 {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { CSSTransitionGroup } from 'react-transition-group';
 import NavDown from '../assets/navDown.svg';
 
 class FrontPage extends React.Component {
@@ -25,12 +24,6 @@ class FrontPage extends React.Component {
   render() {
     return(
       <div className="frontPage" id="frontPage" ref="frontPage">
-        <CSSTransitionGroup
-          transitionName="fadeInLeft"
-          transitionAppear={true}
-          transitionAppearTimeout={1000}
-          transitionEnterTimeout={1000}
-        >
           <h1> {this.props.title} </h1>
           <h2> {this.props.title2} </h2>
           {this.state.subtitle &&
@@ -38,7 +31,6 @@ class FrontPage extends React.Component {
           }
           {this.props.children}
 
-        </CSSTransitionGroup>
         {!this.props.noNavDown &&
             <img src={NavDown} alt="Navigation Down" id="navDown" onClick={() => window.scrollTo({top: this.refs.frontPage.clientHeight, behavior: 'smooth'}) }/>
         }
